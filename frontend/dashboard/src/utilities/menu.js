@@ -5,7 +5,7 @@ import {menuOptions} from "./constants";
 
 function HorizontalMenu(props) {
     const itemsLayout = []
-    for (const value of menuOptions.values()) {
+    for (const value of props.options.values()) {
         itemsLayout.push(
             <p className="font-inter text-lg text-gray-900 font-light hover:font-normal px-8">
                 <Link to="/">
@@ -29,7 +29,7 @@ function HorizontalMenu(props) {
 
 function Dropdown(props) {
     const itemsLayout = []
-    for (const [index, value] of menuOptions.entries()) {
+    for (const [index, value] of props.options.entries()) {
         if(index===0){
             itemsLayout.push(
                 <div>
