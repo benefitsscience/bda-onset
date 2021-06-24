@@ -5,7 +5,6 @@ import {Fade} from "@material-ui/core";
 // TODO: use `for loop` for each menu option and update `Link` accordingly.
 // `Menu` composed of `HorizontalMenu` for large screens, and `VerticalMenu` w/ `Dropdown` for small screens
 
-
 function Child() {
   // We can use the `useParams` hook here to access
   // the dynamic pieces of the URL.
@@ -17,7 +16,6 @@ function Child() {
     </div>
   );
 }
-
 
 function HorizontalMenu(props) {
     return(
@@ -121,6 +119,5 @@ function Menu() {
         </Router>
     )
 }
-
 
 export default Menu
