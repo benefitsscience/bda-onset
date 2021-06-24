@@ -4,11 +4,15 @@ import {Fade} from "@material-ui/core";
 import {menuOptions} from "./constants";
 
 function HorizontalMenu(props) {
-    const itemsLayout = []
-    for (const value of props.options.values()) {
+    const itemsLayout = [];
+    let url = "/";
+    for (const [index, value] of props.options.entries()) {
+        if(index>0){
+            url = "/".concat(value.toLowerCase())
+        }
         itemsLayout.push(
             <p className="font-inter text-lg text-gray-900 font-light hover:font-normal px-8">
-                <Link to="/">
+                <Link to={url}>
                     {value}
                 </Link>
             </p>
@@ -43,11 +47,12 @@ function Dropdown(props) {
             )
         }
         else{
+            let url = "/".concat(value.toLowerCase())
             itemsLayout.push(
                 <div>
                     <hr className="margin"/>
                     <li className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap">
-                        <Link to="/blog">
+                        <Link to={url}>
                             {value}
                         </Link>
                     </li>
@@ -56,7 +61,7 @@ function Dropdown(props) {
         }
     }
     return(
-        <Fade in={props.isClicked} mountOnEnter unmountOnExit timeout={400}>
+        <Fade in={props.isClicked} mountOnEnter unmountOnExit timeout={450}>
             <ul className="absolute text-gray-900 bg-gray-100 h-screen w-screen bg-opacity-90 mt-1.5">
                 {itemsLayout}
             </ul>

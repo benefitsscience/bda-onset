@@ -1,4 +1,4 @@
-export const menuOptions =[
+export const menuOptions = [
     "About",
     "Blog",
     "Research",
