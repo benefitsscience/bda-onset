@@ -9,6 +9,10 @@
 .has-tooltip:hover .tooltip {
   @apply visible z-50;
 }
-hr.line {
+hr.color {
   border-color: slategray;
+}
+hr.margin {
+  margin-left: 1rem;
+  margin-right: 4rem;
 }

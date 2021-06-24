@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {Fade} from '@material-ui/core';
 import {BrowserRouter as Router, Switch, Route, Link, useParams} from "react-router-dom";
 
@@ -16,25 +16,7 @@ function Child() {
 }
 
 function BSTDashboard() {
-  // Initialize hook to regression coefficients
-  const [coefficients, setCoefficients] = useState([]);
   const [btnClick, setBtnClick] = useState(false)
-
-  // Specify request details for Flask
-  const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ data: 10})
-    };
-
-  // Add effect post-rendering
-  useEffect(() => {
-    fetch('/regression', requestOptions
-    ).then(res => res.json()).then(data => {
-      setCoefficients(data.coefficients)
-    })
-  }, []);
-
 
   return (
   // Header section
@@ -85,25 +67,25 @@ function BSTDashboard() {
                         <Fade in={btnClick} mountOnEnter unmountOnExit timeout={400}>
                         <ul className="absolute text-gray-900 bg-gray-100
                          h-screen w-screen bg-opacity-90 mt-1.5">
-                            <hr className="line ml-3 mr-24"></hr>
+                            <hr className="color margin" />
                             <li className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap">
                                 <Link to="/about">
                                     About
                                 </Link>
                             </li>
-                            <hr className="ml-4 mr-24"></hr>
+                            <hr className="margin"/>
                             <li className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap">
                                 <Link to="/blog">
                                     Blog
                                 </Link>
                             </li>
-                            <hr className="ml-4 mr-24"></hr>
+                            <hr className="margin"/>
                             <li className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap">
                                 <Link to="/research">
                                     Research
                                 </Link>
                             </li>
-                            <hr className="ml-4 mr-24"></hr>
+                            <hr className="margin"/>
                             <li className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap">
                                 <Link to="/contact">
                                     Contact
