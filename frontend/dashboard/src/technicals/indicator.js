@@ -8,9 +8,9 @@ function Indicator(props) {
             <span className="tooltip rounded shadow-lg p-1 bg-gray-50 text-blue-400 -mt-8">
                 {props.tooltip}
             </span>
-            <div className="flex-column justify-center pb-3 md:py-0">
+            <div className="flex-column justify-center pb-8 md:py-0">
                 <p className="lining-nums text-center text-6xl text-medium text-gray-900">{props.value}</p>
-                <p className="text-3xl text-center text-light text-gray-600">{props.name}</p>
+                <p className="font-inter text-3xl text-center font-extralight text-gray-600">{props.name}</p>
             </div>
         </div>
 

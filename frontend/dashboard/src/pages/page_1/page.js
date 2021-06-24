@@ -10,7 +10,7 @@ function PageOne(props) {
 
             <Menu />
 
-            <div className="flex flex-col md:flex-row justify-evenly items-center py-12">
+            <div className="flex flex-col md:flex-row justify-evenly items-center py-8">
                 <Indicator value={1} name={"Indicator"} tooltip={"Add more info"}/>
                 <Indicator value={2} name={"Indicator"} tooltip={"Add more info"}/>
                 <Indicator value={3} name={"Indicator"} tooltip={"Add more info"}/>
