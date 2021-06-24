@@ -1,5 +1,19 @@
 import React, {useState, useEffect} from 'react';
-import {Slide, Collapse, Fade} from '@material-ui/core';
+import {Fade} from '@material-ui/core';
+import {BrowserRouter as Router, Switch, Route, Link, useParams} from "react-router-dom";
+
+
+function Child() {
+  // We can use the `useParams` hook here to access
+  // the dynamic pieces of the URL.
+  let { id } = useParams();
+
+  return (
+    <div>
+      <h3>ID: {id}</h3>
+    </div>
+  );
+}
 
 function BSTDashboard() {
   // Initialize hook to regression coefficients
@@ -34,54 +48,82 @@ function BSTDashboard() {
         </span>
     </div>
     {/* Selection bar */}
-    <div className="w-screen h-auto bg-gray-100">
-        <div className="hidden sm:block">
-            <div className="flex flex-shrink 0 place-content-center py-1.5">
-                <a className="font-mono tracking-tighter text-lg text-gray-900 font-light hover:font-normal px-8"
-                href="https://www.benefitsscience.com">BST</a>
-                <p className="font-inter text-lg text-gray-900 font-light hover:font-normal px-8"> About</p>
-                <p className="font-inter text-lg text-gray-900 font-light hover:font-normal px-8"> Blog</p>
-                <p className="font-inter text-lg text-gray-900 font-light hover:font-normal px-8"> Research</p>
-                <p className="font-inter text-lg text-gray-900 font-light hover:font-normal px-8"> Contact</p>
+    <Router>
+        <div className="w-screen h-auto bg-gray-100">
+            <div className="hidden sm:block">
+                <div className="flex flex-shrink 0 place-content-center py-1.5">
+                    <a className="font-mono tracking-tighter text-lg text-gray-900 font-light hover:font-normal px-8"
+                    href="https://www.benefitsscience.com">BST</a>
+                    <p className="font-inter text-lg text-gray-900 font-light hover:font-normal px-8">
+                        <Link to="/about">
+                            About
+                        </Link>
+                    </p>
+                    <p className="font-inter text-lg text-gray-900 font-light hover:font-normal px-8">
+                        <Link to="/blog">
+                            Blog
+                        </Link>
+                    </p>
+                    <p className="font-inter text-lg text-gray-900 font-light hover:font-normal px-8">
+                        <Link to="/research">
+                            Research
+                        </Link>
+                    </p>
+                    <p className="font-inter text-lg text-gray-900 font-light hover:font-normal px-8">
+                        <Link to="/contact">
+                            Contact
+                        </Link>
+                    </p>
+                </div>
             </div>
+            <div className="block sm:hidden flex justify-between items-center">
+                    <div className="dropdown relative">
+                        <button className="p-1.5" onClick={() => setBtnClick(!btnClick)}>
+                            <div className="w-5 h-0.5 bg-gray-800 my-1 mx-2"> </div>
+                            <div className="w-5 h-0.5 bg-gray-800 my-1 mx-2"> </div>
+                        </button>
+                        <Fade in={btnClick} mountOnEnter unmountOnExit timeout={400}>
+                        <ul className="absolute text-gray-900 bg-gray-100
+                         h-screen w-screen bg-opacity-90 mt-1.5">
+                            <hr className="line ml-3 mr-24"></hr>
+                            <li className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap">
+                                <Link to="/about">
+                                    About
+                                </Link>
+                            </li>
+                            <hr className="ml-4 mr-24"></hr>
+                            <li className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap">
+                                <Link to="/blog">
+                                    Blog
+                                </Link>
+                            </li>
+                            <hr className="ml-4 mr-24"></hr>
+                            <li className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap">
+                                <Link to="/research">
+                                    Research
+                                </Link>
+                            </li>
+                            <hr className="ml-4 mr-24"></hr>
+                            <li className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap">
+                                <Link to="/contact">
+                                    Contact
+                                </Link>
+                            </li>
+                        </ul>
+                        </Fade>
+                    </div>
+                    <a className="font-mono tracking-tighter text-lg text-gray-900 font-light hover:font-normal py-1.5 -ml-5"
+                       href="https://www.benefitsscience.com">
+                        BST
+                    </a>
+                    <div className="invisible">
+                    </div>
+            </div>
+            <Switch>
+                <Route path="/:id" children={<Child />} />
+            </Switch>
         </div>
-        <div className="block sm:hidden flex justify-between items-center">
-                <div className="dropdown relative">
-                    <button className="p-1.5" onClick={() => setBtnClick(!btnClick)}>
-                        <div className="w-5 h-0.5 bg-gray-800 my-1 mx-2"> </div>
-                        <div className="w-5 h-0.5 bg-gray-800 my-1 mx-2"> </div>
-                    </button>
-                    <Fade in={btnClick} mountOnEnter unmountOnExit timeout={400}>
-                    <ul className="absolute text-gray-900 bg-gray-100
-                     h-screen w-screen bg-opacity-90 mt-1.5">
-                        <hr className="line ml-3 mr-24"></hr>
-                        <li className=""><a
-                            className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap"
-                            href="#">About</a></li>
-                        <hr className="ml-4 mr-24"></hr>
-                        <li className=""><a
-                            className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap"
-                            href="#">Blog</a></li>
-                        <hr className="ml-4 mr-24"></hr>
-                        <li className=""><a
-                            className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap"
-                            href="#">Research</a></li>
-                        <hr className="ml-4 mr-24"></hr>
-                        <li className=""><a
-                            className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap"
-                            href="#">Contact</a></li>
-                    </ul>
-                    </Fade>
-                </div>
-                <a className="font-mono tracking-tighter text-lg text-gray-900 font-light hover:font-normal py-1.5 -ml-5"
-                   href="https://www.benefitsscience.com">
-                    BST
-                </a>
-                <div className="invisible">
-
-                </div>
-        </div>
-    </div>
+    </Router>
 
     {/* Key metrics */}
     <div className="flex flex-col md:flex-row justify-evenly items-center py-12">
