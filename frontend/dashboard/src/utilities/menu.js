@@ -1,21 +1,9 @@
-import {Link, BrowserRouter as Router, Switch, Route, useParams} from "react-router-dom";
+import {Link} from "react-router-dom";
 import React, {useState} from "react";
 import {Fade} from "@material-ui/core";
 
 // TODO: use `for loop` for each menu option and update `Link` accordingly.
 // `Menu` composed of `HorizontalMenu` for large screens, and `VerticalMenu` w/ `Dropdown` for small screens
-
-function Child() {
-  // We can use the `useParams` hook here to access
-  // the dynamic pieces of the URL.
-  let { id } = useParams();
-
-  return (
-    <div>
-      <h3>ID: {id}</h3>
-    </div>
-  );
-}
 
 function HorizontalMenu(props) {
     return(
@@ -26,7 +14,7 @@ function HorizontalMenu(props) {
                     BST
                 </a>
                 <p className="font-inter text-lg text-gray-900 font-light hover:font-normal px-8">
-                    <Link to="/about">
+                    <Link to="/">
                         {props.options[0]}
                     </Link>
                 </p>
@@ -57,7 +45,7 @@ function Dropdown(props) {
              h-screen w-screen bg-opacity-90 mt-1.5">
                 <hr className="color margin" />
                 <li className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap">
-                    <Link to="/about">
+                    <Link to="/">
                         {props.options[0]}
                     </Link>
                 </li>
@@ -108,15 +96,10 @@ function VerticalMenu(props) {
 function Menu() {
     const options = ["About", "Blog", "Research", "Contact"]
     return(
-        <Router>
-            <div className="w-screen h-auto bg-gray-100">
-                <HorizontalMenu options={options} />
-                <VerticalMenu options={options} />
-            </div>
-            <Switch>
-                <Route path="/:id" children={<Child />} />
-            </Switch>
-        </Router>
+        <div className="w-screen h-auto bg-gray-100">
+            <HorizontalMenu options={options} />
+            <VerticalMenu options={options} />
+        </div>
     )
 }
 
