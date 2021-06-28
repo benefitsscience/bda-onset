@@ -17,13 +17,14 @@ function PageOne(props) {
                 <Indicator value={3} name={"Indicator"} tooltip={"Add more info"}/>
             </div>
 
-            <div className="grid grid-flow-row grid-cols-2 grid-rows-2 gap-4 m-4">
-                <Box text={"This is a box 1."}/>
-                <Box text={"This is a box 2."}/>
-                <Box text={"This is a box 3."}/>
-                <Box text={"This is a box 4."}/>
+            <div className="flex flex-col">
+                <div className="md:grid grid-flow-row grid-cols-2 grid-rows-2 gap-4 md:m-4">
+                    <Box text={"This is a box 1."}/>
+                    <Box text={"This is a box 2."}/>
+                    <Box text={"This is a box 3."}/>
+                    <Box text={"This is a box 4."}/>
+                </div>
             </div>
-
         </div>
     )
 }

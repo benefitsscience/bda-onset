@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
-import {menuOptions} from "./utilities/constants";
+import {menuOptions, headerSubtitles} from "./utilities/constants";
 import PageOne from "./pages/page_1/page";
 import PageTwo from "./pages/page_2/page";
 import PageThree from "./pages/page_3/page";
@@ -14,19 +14,19 @@ function BSTDashboard() {
       <Router>
           <Switch>
               <Route exact path={"/"}>
-                  <PageOne title="Product Title" subtitle="Some info" />
+                  <PageOne title={menuOptions[0]} subtitle={headerSubtitles[0]} />
               </Route>
 
               <Route exact path={"/".concat(menuOptions[1].toLowerCase())}>
-                  <PageTwo title={menuOptions[1]} subtitle="Some blog details" />
+                  <PageTwo title={menuOptions[1]} subtitle={headerSubtitles[1]} />
               </Route>
 
               <Route exact path={"/".concat(menuOptions[2].toLowerCase())}>
-                  <PageThree title={menuOptions[2]} subtitle="Some research details" />
+                  <PageThree title={menuOptions[2]} subtitle={headerSubtitles[2]} />
               </Route>
 
               <Route exact path={"/".concat(menuOptions[3].toLowerCase())}>
-                  <PageFour title={menuOptions[2]} subtitle="Some contact details" />
+                  <PageFour title={menuOptions[3]} subtitle={headerSubtitles[3]} />
               </Route>
           </Switch>
       </Router>
