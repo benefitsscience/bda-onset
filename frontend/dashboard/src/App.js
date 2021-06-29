@@ -2,10 +2,10 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import {menuOptions, headerSubtitles} from "./utilities/constants";
-import PageOne from "./pages/page_1/page";
-import PageTwo from "./pages/page_2/page";
-import PageThree from "./pages/page_3/page";
-import PageFour from "./pages/page_4/page";
+import PageOne from "./pages/page_1/page1";
+import PageTwo from "./pages/page_3/page3";
+import PageThree from "./pages/page_2/page2";
+import PageFour from "./pages/page_4/page4";
 
 
 function BSTDashboard() {

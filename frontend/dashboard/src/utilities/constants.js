@@ -1,7 +1,7 @@
 export const menuOptions = [
     "Insight",
-    "Research",
     "Data",
+    "Research",
     "Contact"
 ]
 
