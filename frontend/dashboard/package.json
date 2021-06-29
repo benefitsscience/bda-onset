@@ -44,6 +44,7 @@
   },
   "proxy": "http://localhost:5000",
   "devDependencies": {
+    "@material-ui/data-grid": "^4.0.0-alpha.32",
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.0",
