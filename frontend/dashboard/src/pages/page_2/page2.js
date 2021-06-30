@@ -4,7 +4,9 @@ import Menu from "../../utilities/menu";
 import Table from "../../technicals/table";
 
 const columns = [
-  { field: 'id', headerName: 'ID', width: 90 },
+  { field: 'id',
+    headerName: 'ID',
+    width: 100 },
   {
     field: 'firstName',
     headerName: 'First name',
@@ -34,7 +36,7 @@ const columns = [
       `${params.getValue(params.id, 'firstName') || ''} ${
         params.getValue(params.id, 'lastName') || ''
       }`,
-  },
+  }
 ];
 
 const rows = [

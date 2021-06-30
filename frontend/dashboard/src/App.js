@@ -3,8 +3,8 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import {menuOptions, headerSubtitles} from "./utilities/constants";
 import PageOne from "./pages/page_1/page1";
-import PageTwo from "./pages/page_3/page3";
-import PageThree from "./pages/page_2/page2";
+import PageTwo from "./pages/page_2/page2";
+import PageThree from "./pages/page_3/page3";
 import PageFour from "./pages/page_4/page4";
 
 
