@@ -53,7 +53,7 @@ const rows = [
 
 
 
-function PageThree(props) {
+function PageTwo(props) {
     return(
         <div>
           <Header title={props.title} subtitle={props.subtitle} />
@@ -71,4 +71,4 @@ function PageThree(props) {
     )
 }
 
-export default PageThree
+export default PageTwo

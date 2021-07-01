@@ -18,6 +18,6 @@ export const contactDetails = [
         "website": "http://users.iems.northwestern.edu/~nohadani/",
         "title": "Data Science Lead",
         "phone": "+1 (123) 456-7890",
-        "email": "onohadani@benefitsscience.com"
+        "email": "info@benefitsscience.com"
     }
 ]

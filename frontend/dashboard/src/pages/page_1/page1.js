@@ -3,6 +3,9 @@ import Header from "../../utilities/header";
 import Menu from "../../utilities/menu";
 import Indicator from "../../technicals/indicator";
 import Box from "../../utilities/box";
+import {Box1} from "../../utilities/box";
+import LinePlot from "../../technicals/lineplot";
+import BarPlot from "../../technicals/barplot";
 
 function PageOne(props) {
     return(
@@ -19,10 +22,10 @@ function PageOne(props) {
 
             <div className="flex flex-col">
                 <div className="md:grid grid-flow-row grid-cols-2 grid-rows-2 gap-4 md:m-4">
-                    <Box text={"This is a box 1."}/>
-                    <Box text={"This is a box 2."}/>
-                    <Box text={"This is a box 3."}/>
-                    <Box text={"This is a box 4."}/>
+                    <Box text={"Line chart title"} plot={<LinePlot/>}/>
+                    <Box text={"Bar chart title"} plot={<BarPlot/>}/>
+                    <Box1 text={"Pie chart title"} plot={<LinePlot/>}/>
+                    <Box1 text={"Summary stats title"} plot={<LinePlot/>}/>
                 </div>
             </div>
         </div>

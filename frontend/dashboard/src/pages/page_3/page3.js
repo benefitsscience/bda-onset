@@ -4,7 +4,7 @@ import Menu from "../../utilities/menu";
 import 'katex/dist/katex.min.css';
 import { BlockMath } from 'react-katex';
 
-function PageTwo(props) {
+function PageThree(props) {
     return(
         <div>
             <Header title={props.title} subtitle={props.subtitle} />
@@ -40,4 +40,4 @@ function PageTwo(props) {
             )
     }
 
-export default PageTwo
+export default PageThree
