@@ -12,14 +12,16 @@ function Table(props){
     const classes = useStyles();
 
     return(
-        <div className="h-96 w-auto max-w-7xl m-6">
-            <DataGrid
-                rows={props.rows}
-                columns={props.columns}
-                pageSize={props.pageSize}
-                checkboxSelection
-                className={classes.dataGrid}
-            />
+        <div className="flex overflow-auto">
+            <div className="h-96 w-auto max-w-7xl">
+                <DataGrid
+                    rows={props.rows}
+                    columns={props.columns}
+                    pageSize={props.pageSize}
+                    checkboxSelection
+                    className={classes.dataGrid}
+                />
+            </div>
         </div>
     )
 }

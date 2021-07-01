@@ -7,8 +7,8 @@ export const menuOptions = [
 
 export const headerSubtitles = [
     "Leverage machine learning and optimization",
-    "The maths behind it all",
     "The fuel to our models",
+    "The maths behind it all",
     "Drop us a message"
 ]
 

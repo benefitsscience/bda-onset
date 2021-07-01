@@ -56,11 +56,18 @@ const rows = [
 function PageThree(props) {
     return(
         <div>
-            <Header title={props.title} subtitle={props.subtitle} />
-            <Menu />
+          <Header title={props.title} subtitle={props.subtitle} />
+          <Menu />
+          <div className="font-inter font-extralight text-3xl text-gray-700 text-center mt-4 mb-1">
+            Table Name
+          </div>
+          <div className="font-inter font-extralight text-gray-600 text-base mx-16 text-justify">
+            Add a description of the dataset, and/or include details about the columns and their dtype.
+          </div>
+          <div className="flex justify-center mx-16 my-6">
             <Table rows={rows} columns={columns} pageSize={5} />
+          </div>
         </div>
-
     )
 }
 
