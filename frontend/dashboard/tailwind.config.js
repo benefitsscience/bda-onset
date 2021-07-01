@@ -12,7 +12,8 @@ theme: {
     extend: {
       fontWeight: ['hover', 'focus'],
       display: ['hover', 'focus'],
-      overflow: ['hover', 'focus']
+      overflow: ['hover', 'focus'],
+      borderColor: ['hover', 'focus', 'active']
     },
   },
   plugins: [require('tailwindcss-font-inter')],

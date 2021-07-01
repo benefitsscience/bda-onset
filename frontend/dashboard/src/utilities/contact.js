@@ -1,5 +1,5 @@
 import {contactDetails} from "./constants";
-import logo from "../images/example.jpg"
+import contact_img from "../images/example.jpg"
 import {useState} from "react";
 
 
@@ -18,7 +18,7 @@ function ContactCard(props){
 
     return(
         <div className="max-w-sm mx-auto bg-gray-100 rounded-2xl shadow-md overflow-hidden">
-            <img className="h-36 w-full object-cover" src={logo} alt={"Profile picture Omid"} />
+            <img className="h-36 w-full object-cover" src={contact_img} alt={"Profile picture Omid"} />
             <div  className="p-6">
                 <a className="font-inter font-extralight hover:font-normal text-2xl text-gray-600" href={contactDetails[props.id].website}>
                     {contactDetails[props.id].name}
