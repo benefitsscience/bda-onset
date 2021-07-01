@@ -9,7 +9,7 @@ function PageFour(props) {
         <div>
             <Header title={props.title} subtitle={props.subtitle} />
             <Menu />
-            <div className="flex flex-col mb-12 place-content-center md:flex-row pt-10 gap-4" >
+            <div className="flex flex-row flex-wrap place-content-center gap-24 my-8" >
                 <FeedbackCard/>
                 <ContactCard id={0}/>
             </div>
