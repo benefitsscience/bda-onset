@@ -14,7 +14,13 @@ function PageOne(props) {
 
             <Menu />
 
-            <div className="flex flex-col md:flex-row justify-evenly items-center py-8">
+            <div className="font-inter font-extralight text-gray-600 text-base mx-4 pt-4 text-justify">
+                Add a description of the indicators or briefly explain the purpose of the Insight section.
+                <br/>
+                This can go over multiple lines.
+            </div>
+
+            <div className="flex flex-col md:flex-row justify-evenly items-center pt-4 pb-8">
                 <Indicator value={1} name={"Indicator"} tooltip={"Add more info"}/>
                 <Indicator value={2} name={"Indicator"} tooltip={"Add more info"}/>
                 <Indicator value={3} name={"Indicator"} tooltip={"Add more info"}/>

@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {Fade} from "@material-ui/core";
 
 import {menuOptions, headerSubtitles} from "./utilities/constants";
 import PageOne from "./pages/page_1/page1";
