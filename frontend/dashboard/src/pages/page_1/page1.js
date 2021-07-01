@@ -6,6 +6,7 @@ import Box from "../../utilities/box";
 import {Box1} from "../../utilities/box";
 import LinePlot from "../../technicals/lineplot";
 import BarPlot from "../../technicals/barplot";
+import PiePlot from "../../technicals/pieplot";
 
 function PageOne(props) {
     return(
@@ -30,10 +31,11 @@ function PageOne(props) {
                 <div className="md:grid grid-flow-row grid-cols-2 grid-rows-2 gap-4 md:m-4">
                     <Box text={"Line chart title"} plot={<LinePlot/>}/>
                     <Box text={"Bar chart title"} plot={<BarPlot/>}/>
-                    <Box1 text={"Pie chart title"} plot={<LinePlot/>}/>
+                    <Box1 text={"Pie chart title"} plot={<PiePlot/>}/>
                     <Box1 text={"Summary stats title"} plot={<LinePlot/>}/>
                 </div>
             </div>
+            <div className="p-4"/>
         </div>
     )
 }

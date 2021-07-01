@@ -43,6 +43,12 @@ export function Box1(props){
             <div className="w-10/12 max-w-2xl mx-auto mt-4">
             {props.plot}
             </div>
+            <div className="py-6">
+                <hr className="color mx-8"/>
+                <div className="font-inter font-extralight text-gray-700 text-base mt-3 mx-8 text-justify">
+                    This is some extra space to draw conclusions, or give recommendations.
+                </div>
+            </div>
         </div>
     </div>
     )
