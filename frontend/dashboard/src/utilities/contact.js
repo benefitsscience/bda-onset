@@ -1,6 +1,5 @@
 import {contactDetails} from "./constants";
-import logo from "../example.jpg"
-import {Fade} from "@material-ui/core";
+import logo from "../images/example.jpg"
 import {useState} from "react";
 
 
