@@ -1,16 +1,24 @@
-import {useState} from "react";
-import {readRemoteFile} from "react-papaparse";
+import React from 'react';
+import Papa from 'papaparse';
 import csvFile from "../data/E-Transfer barplot.csv";
 import {Bar, BarChart, CartesianGrid, Legend, XAxis, YAxis, Tooltip, ResponsiveContainer} from "recharts";
 
+
 function BarPlot(){
-    const [parsedCsvData, setParsedCsvData] = useState([]);
-    readRemoteFile(csvFile, {
-        download: true,
-        complete: results => {
-      setParsedCsvData(results.data)    },
-        header: true
-    })
+    const [parsedCsvData, setParsedCsvData] = React.useState([]);
+      React.useEffect(() => {
+        async function getData() {
+          const response = await fetch(csvFile)
+          const reader = response.body.getReader()
+          const result = await reader.read() // raw array
+          const decoder = new TextDecoder('utf-8')
+          const csv = decoder.decode(result.value) // the csv text
+          const results = Papa.parse(csv, { header: true }) // object with { data, errors, meta }
+          const rows = results.data // array of objects
+          setParsedCsvData(rows)
+        }
+        getData()
+      }, [])
 
     return(
         <ResponsiveContainer width="100%" height={320}>
