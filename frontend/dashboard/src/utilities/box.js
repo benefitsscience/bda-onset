@@ -11,10 +11,6 @@ export default function Box(props){
             <div className="font-inter font-extralight text-gray-700 text-base mx-8 text-justify">
                 Add concise description of the plot, and/or explanation of interactive sliders, buttons etc.
             </div>
-            <div className="font-inter font-light text-gray-900 text-base mx-8 my-2">
-                Slider
-                <DiscreteSlider />
-            </div>
             <div className="w-10/12 max-w-2xl mx-auto mt-4">
             {props.plot}
             </div>
