@@ -39,11 +39,13 @@ function PageOne(props) {
                             csv={csv1}
                             colors={popColors}
                             title={"Total Population"}
+                            symbol={''}
                         />}
                         plot2={<PiePlot
                             csv={csv2}
                             colors={onsetColors}
                             title={"Onset Breakdown"}
+                            symbol={"%"}
                         />}
 
                     />
