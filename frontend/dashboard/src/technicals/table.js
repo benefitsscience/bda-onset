@@ -20,7 +20,7 @@ function Table(props){
       },
     });
 
-    const tableWidth = (150 * props.columns.length) + 10
+    const tableWidth = (150 * props.columns.length) + 170
     const useStyles = makeStyles({
         dataGrid: {width: tableWidth.toString().concat("px"),
         }

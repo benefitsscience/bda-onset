@@ -1,34 +1,49 @@
-import React, { PureComponent } from 'react';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import React from 'react';
+import {PieChart, Pie, ResponsiveContainer, Tooltip, Cell, Legend} from 'recharts';
+import Papa from "papaparse";
 
-const data01 = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
-  { name: 'Group D', value: 200 },
-];
-const data02 = [
-  { name: 'A1', value: 100 },
-  { name: 'A2', value: 300 },
-  { name: 'B1', value: 100 },
-  { name: 'B2', value: 80 },
-  { name: 'B3', value: 40 },
-  { name: 'B4', value: 30 },
-  { name: 'B5', value: 50 },
-  { name: 'C1', value: 100 },
-  { name: 'C2', value: 200 },
-  { name: 'D1', value: 150 },
-  { name: 'D2', value: 50 },
-];
+function PiePlot(props){
+      const [data, setData] = React.useState([]);
+      React.useEffect(() => {
+        async function getData() {
+          const response = await fetch(props.csv)
+          const reader = response.body.getReader()
+          const result = await reader.read() // raw array
+          const decoder = new TextDecoder('utf-8')
+          const csv = decoder.decode(result.value) // the csv text
+          const results = Papa.parse(csv, {header: true, dynamicTyping: true}) // object with { data, errors, meta }
+          const rows = results.data // array of object
+          setData(rows)
+        }
+        getData()
+      }, [])
 
-function PiePlot(){
     return (
-      <ResponsiveContainer width="100%" height={320}>
-        <PieChart>
-          <Pie data={data01} dataKey="value" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
-          <Pie data={data02} dataKey="value" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+        <PieChart width={350} height={320} margin={{ top: 5, right: 25, left: 25}}>
+        <text x={"50%"}
+              y={"5%"}
+              textAnchor="end"
+              dominantBaseline="middle"
+              className="font-inter text-gray-800">
+            {props.title}
+        </text>
+        <Tooltip />
+        <Legend />
+          <Pie
+              data={data}
+              dataKey="value"
+              cx="50%"
+              cy="50%"
+              outerRadius={"60%"}
+              fill="#8884d8"
+              label
+              legendType="triangle"
+          >
+              {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={props.colors[index % props.colors.length]} />
+            ))}
+          </Pie>
         </PieChart>
-      </ResponsiveContainer>
     )
 }
 

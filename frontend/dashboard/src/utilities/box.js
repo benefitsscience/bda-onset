@@ -1,4 +1,4 @@
-import DiscreteSlider from "../technicals/slider";
+import React from "react";
 
 
 export default function Box(props){
@@ -26,7 +26,7 @@ export default function Box(props){
     )
 }
 
-export function Box1(props){
+export function PieBox(props){
     return(
     <div className="bg-gray-50 w-auto h-auto mb-4 md:m-0">
         <div className="p-2">
@@ -36,8 +36,11 @@ export function Box1(props){
             <div className="font-inter font-extralight text-gray-600 text-base mx-8 text-justify">
                 Add concise description of the plot, and/or explanation of interactive sliders, buttons etc.
             </div>
-            <div className="w-10/12 max-w-2xl mx-auto mt-4">
-            {props.plot}
+            <div className="flex justify-center">
+                <div className="flex flex-col md:flex-row items-center pt-4 overflow-auto md:gap-0 gap-6">
+                        {props.plot1}
+                        {props.plot2}
+                </div>
             </div>
             <div className="py-6">
                 <hr className="color mx-8"/>

@@ -1,5 +1,3 @@
-
-
 export const menuOptions = [
     "Insight",
     "Data",
@@ -24,5 +22,15 @@ export const contactDetails = [
     }
 ]
 
+export const popColors = [
+    '#685268',
+    '#FFCD73'
+]
 
+export const onsetColors = [
+    "#AFDDD5",
+    '#FFA700',
+    '#FFCCCD',
+    '#64864A'
+]
 
