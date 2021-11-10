@@ -2,8 +2,8 @@ import React from 'react';
 import Header from "../../utilities/header";
 import Menu from "../../utilities/menu";
 import Table from "../../technicals/table";
-import csvFile from "../../data/Energy Transfer/E-Transfer table.csv";
 import Papa from "papaparse";
+import {dataURLs} from "../../utilities/constants";
 
 const columns = [
   { field: 'id',
@@ -44,7 +44,7 @@ function PageTwo(props) {
     const [parsedCsvData, setParsedCsvData] = React.useState([]);
       React.useEffect(() => {
         async function getData() {
-          const response = await fetch(csvFile)
+          const response = await fetch(dataURLs[props.client]["table"])
           const reader = response.body.getReader()
           const result = await reader.read() // raw array
           const decoder = new TextDecoder('utf-8')

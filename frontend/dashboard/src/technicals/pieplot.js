@@ -22,9 +22,9 @@ const getIntroOfPage = (label) => {
 const CustomTooltip = ({ active, payload, symbol}) => {
   if (active) {
     return (
-      <div className="bg-gray-200 bg-opacity-80 rounded-md shadow-md text-justify w-auto p-2">
+      <div className="font-inter bg-gray-200 bg-opacity-80 rounded-md shadow-md text-justify w-auto p-2">
         <p>{`${payload[0].name} : ${Math.round(payload[0].value)}${symbol}`}</p>
-        <p>{getIntroOfPage(payload[0].name)}</p>
+        <p className="font-extralight">{getIntroOfPage(payload[0].name)}</p>
       </div>
     );
   }

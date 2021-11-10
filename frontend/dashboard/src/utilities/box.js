@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Box(props){
     return(
-    <div className="bg-gray-100 w-auto h-auto mb-4 md:m-0">
+    <div className="bg-gray-100 w-auto h-auto mb-4 ml:m-0">
         <div className="p-2">
             <div className="font-inter text-xl font-extralight text-center">
                 {props.text}
@@ -28,7 +28,7 @@ export default function Box(props){
 
 export function PieBox(props){
     return(
-    <div className="bg-gray-50 w-auto h-auto mb-4 md:m-0">
+    <div className="bg-gray-100 w-auto h-auto mb-4 ml:m-0">
         <div className="p-2">
             <div className="font-inter text-xl font-extralight text-center">
                 {props.text}

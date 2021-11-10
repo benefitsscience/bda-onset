@@ -1,12 +1,12 @@
 import {Link} from "react-router-dom";
 import React, {useState} from "react";
 import {Fade} from "@material-ui/core";
-import {menuOptions} from "./constants";
+import {menuOptions, clientNames} from "./constants";
 
 function HorizontalMenu(props) {
     const itemsLayout = [];
     let url = "/";
-    for (const [index, value] of props.options.entries()) {
+    for (const [index, value] of props.menuOptions.entries()) {
         if(index>0){
             url = "/".concat(value.toLowerCase())
         }
@@ -19,15 +19,55 @@ function HorizontalMenu(props) {
         )
     }
     return(
-        <div className="hidden sm:block">
+        <div className="hidden ml:block">
             <div className="flex flex-shrink-0 place-content-center py-1.5">
-                <a className="font-mono tracking-tighter text-lg text-gray-900 font-light hover:font-normal px-8"
-                   href="https://www.benefitsscience.com">
-                    BST
-                </a>
+                <ClientMenu client={props.client}
+                        setClient={props.setClient}
+                        clientOptions={props.clientOptions}
+                />
                 {itemsLayout}
                 </div>
             </div>
+    )
+}
+
+function VerticalMenu(props) {
+    const [isClicked, setIsClicked] = useState(false)
+    return(
+        <div className="block ml:hidden flex justify-between items-center py-1.5">
+            <div className="relative">
+                <button className="p-1.5 focus:outline-none" onClick={() => setIsClicked(!isClicked)}>
+                    <div className="w-5 h-0.5 bg-gray-800 my-1 mx-2"> </div>
+                    <div className="w-5 h-0.5 bg-gray-800 my-1 mx-2"> </div>
+                </button>
+                <Dropdown isClicked={isClicked} options={props.menuOptions} />
+            </div>
+            <ClientMenu client={props.client}
+                        setClient={props.setClient}
+                        clientOptions={props.clientOptions}
+            />
+            <div className="invisible">
+            </div>
+        </div>
+    )
+}
+
+function ClientMenu(props){
+    const [isClicked, setIsClicked] = useState(false)
+    return (
+        <div className="block">
+                <button className="focus:outline-none" onClick={() => setIsClicked(!isClicked)}>
+                    <div className="font-inter text-lg text-gray-900
+                                    font-medium hover:font-bold pr-8">
+                        {props.client}
+                    </div>
+                </button>
+                <ClientDropdown isClicked={isClicked}
+                                options={props.clientOptions}
+                                client={props.client}
+                                setClient={props.setClient}
+                />
+        </div>
     )
 }
 
@@ -62,39 +102,51 @@ function Dropdown(props) {
     }
     return(
         <Fade in={props.isClicked} mountOnEnter unmountOnExit timeout={450}>
-            <ul className="absolute text-gray-900 bg-gray-100 h-screen w-screen bg-opacity-90 mt-1.5">
+            <ul className="absolute text-gray-900 bg-gray-100 h-screen w-screen bg-opacity-90 mt-1.5 z-50">
                 {itemsLayout}
             </ul>
         </Fade>
     )
 }
 
-function VerticalMenu(props) {
-    const [isClicked, setIsClicked] = useState(false)
+export function ClientDropdown(props) {
+    const itemsLayout = []
+    for (const [, value] of props.options.entries()) {
+        itemsLayout.push(
+            <div>
+                <hr className="margin" />
+                <li className="font-inter font-light hover:font-medium py-2 px-4 block whitespace-nowrap">
+                    <button className="focus:outline-none" onClick={() => props.setClient(value)}>
+                        {value}
+                    </button>
+                </li>
+            </div>
+        )
+    }
     return(
-        <div className="block sm:hidden flex justify-between items-center">
-            <div className="relative">
-                <button className="p-1.5" onClick={() => setIsClicked(!isClicked)}>
-                    <div className="w-5 h-0.5 bg-gray-800 my-1 mx-2"> </div>
-                    <div className="w-5 h-0.5 bg-gray-800 my-1 mx-2"> </div>
-                </button>
-                <Dropdown isClicked={isClicked} options={props.options} />
-            </div>
-            <a className="font-mono tracking-tighter text-lg text-gray-900 font-light hover:font-normal py-1.5 -ml-5"
-               href="https://www.benefitsscience.com">
-                BST
-            </a>
-            <div className="invisible">
-            </div>
-        </div>
+        <Fade in={props.isClicked} mountOnEnter unmountOnExit timeout={450}>
+            <ul className="absolute text-gray-900 bg-gray-100 h-auto w-auto mt-1.5 z-50 -ml-1.5">
+                {itemsLayout}
+            </ul>
+        </Fade>
     )
 }
 
-function Menu() {
+
+function Menu(props) {
+
     return(
         <div className="w-screen h-auto bg-gray-100">
-            <HorizontalMenu options={menuOptions} />
-            <VerticalMenu options={menuOptions} />
+            <HorizontalMenu menuOptions={menuOptions}
+                            clientOptions={clientNames}
+                            client={props.client}
+                            setClient={props.setClient}
+            />
+            <VerticalMenu menuOptions={menuOptions}
+                          clientOptions={clientNames}
+                          client={props.client}
+                          setClient={props.setClient}
+            />
         </div>
     )
 }
