@@ -46,7 +46,7 @@ function PageOne(props) {
                             dataPath={dataURLs[props.client]["pie2"]}
                             colors={onsetColors}
                             title={"Onset Breakdown"}
-                            symbol={"%"}
+                            symbol={""}
                         />}
                         text={plotDescriptions["pieBox"]}
                     />

@@ -16,13 +16,13 @@ import T_table from "../data/Thorind/table.csv"
 
 export const clientNames = [
     "Energy Transfer",
-    "Thorind",
+    "Thor Industries",
     "LabCorp"
 ]
 
 
 export const menuOptions = [
-    "Insight",
+    "ONSET Insights",
     "Data",
     "Research",
     "Contact"
@@ -64,6 +64,6 @@ export const onsetColors = [
 
 export const dataURLs = {
         "Energy Transfer": {"pie1": ET_pie1, "pie2": ET_pie2, "line": ET_line, "bar": ET_bar, "table": ET_table},
-        "Thorind": {"pie1": T_pie1, "pie2": T_pie2, "line": T_line, "bar": T_bar, "table": L_table},
+        "Thor Industries": {"pie1": T_pie1, "pie2": T_pie2, "line": T_line, "bar": T_bar, "table": L_table},
         "LabCorp": {"pie1": L_pie1, "pie2": L_pie2, "line": L_line, "bar": L_bar, "table": T_table},
     }

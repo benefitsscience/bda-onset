@@ -2,5 +2,5 @@
 
 export const tableName = "Member's information"
 
-export const tableDescription = "Add a description of the dataset, " +
-    "and/or include details about the columns and their dtype."
+export const tableDescription = "Latest data set containing each member's information " +
+    "and corresponding probability of ONSET for spine surgery"

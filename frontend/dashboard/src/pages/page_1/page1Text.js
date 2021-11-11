@@ -1,7 +1,9 @@
 // Text for each element of page 1
 
-export const projectDescription = "Add a description of the indicators or briefly " +
-"explain the purpose of the Insight section."
+export const projectDescription = "The following graphs depict probabilities of ONSET for spine surgery " +
+"within each company's at risk population over time, and relative differences with the universal average"+
+ " calculated in the population at large (multi-company aggregation). In the general population of BST dataset,"+
+ "the probability of a person requiring spine surgery in the next 12 months = 0.24% "
 
 // List of dictionaries. Each entry corresponds to each indicator left to right
 export const indicators = [
@@ -11,7 +13,7 @@ export const indicators = [
 
 // List of strings - each is a title for the plot - left to right from top to bottom
 export const chartTitles = [
-    "Relative Difference in Spine Surgery",
+    "Relative Difference with Universal Average",
     "Percentage of Spine Surgery by Risk Group",
     "Distribution of Spine Surgery",
     "Additional Plot"
@@ -21,22 +23,24 @@ export const chartTitles = [
 export const plotDescriptions = {
         "lineBox":
             {
-                "intro": "Add concise description of the plot, and/or explanation of interactive sliders, buttons etc.",
-                "discussion": "This is some extra space to draw conclusions, or give recommendations."
+                "intro": "Relative differences of the Company's average probabilities compared to the universal"+
+                " average probabilities in population at large depicted over time"
+,
+                "discussion": " "
         },
         "barBox":
             {
-                "intro": "Add concise description of the plot, and/or explanation of interactive sliders, buttons etc.",
-                "discussion": "This is some extra space to draw conclusions, or give recommendations."
+                "intro": "Fluctuation of Company's probabilities of ONSET depicted over time",
+                "discussion": " "
             },
         "pieBox":
             {
-                "intro": "Add concise description of the plot, and/or explanation of interactive sliders, buttons etc.",
-                "discussion": "This is some extra space to draw conclusions, or give recommendations."
+                "intro": "Breakdown of the company's population at risk",
+                "discussion": "Based on latest probabilities: AUGUST 2021"
             },
         "newBox":
             {
-                "intro": "Add concise description of the plot, and/or explanation of interactive sliders, buttons etc.",
-                "discussion": "This is some extra space to draw conclusions, or give recommendations."
+                "intro": " ",
+                "discussion": " "
             }
     }
