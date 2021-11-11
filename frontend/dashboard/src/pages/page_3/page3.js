@@ -8,7 +8,7 @@ function PageThree(props) {
     return(
         <div>
             <Header title={props.title} subtitle={props.subtitle} />
-            <Menu />
+            <Menu client={props.client} setClient={props.setClient}/>
             <div className="font-inter font-extralight text-3xl text-gray-700 text-center my-4">
                 Why Momentum Really Works
             </div>

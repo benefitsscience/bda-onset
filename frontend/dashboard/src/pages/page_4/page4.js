@@ -8,7 +8,7 @@ function PageFour(props) {
     return(
         <div>
             <Header title={props.title} subtitle={props.subtitle} />
-            <Menu />
+            <Menu client={props.client} setClient={props.setClient}/>
             <div className="font-inter font-extralight text-gray-600 text-base mx-8 pt-8 text-justify">
                 If you have any comments or questions, use the box below.
                 For urgent matters, you can contact us directly using the information provided.

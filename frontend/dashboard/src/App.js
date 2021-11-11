@@ -34,12 +34,16 @@ function BSTDashboard() {
               <Route exact path={"/".concat(menuOptions[2].toLowerCase())}>
                   <PageThree title={menuOptions[2]}
                              subtitle={headerSubtitles[2]}
+                             client={client}
+                             setClient={setClient}
                   />
               </Route>
 
               <Route exact path={"/".concat(menuOptions[3].toLowerCase())}>
                   <PageFour title={menuOptions[3]}
                             subtitle={headerSubtitles[3]}
+                            client={client}
+                            setClient={setClient}
                   />
               </Route>
           </Switch>
