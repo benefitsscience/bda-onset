@@ -1,14 +1,12 @@
 import React from 'react';
 import Papa from 'papaparse';
-import csvFile from "../data/Energy Transfer/E-Transfer barplot.csv";
 import {Bar, BarChart, CartesianGrid, Legend, XAxis, YAxis, Tooltip, ResponsiveContainer} from "recharts";
 
-
-function BarPlot(){
+function BarPlot(props){
     const [parsedCsvData, setParsedCsvData] = React.useState([]);
       React.useEffect(() => {
         async function getData() {
-          const response = await fetch(csvFile)
+          const response = await fetch(props.dataPath)
           const reader = response.body.getReader()
           const result = await reader.read() // raw array
           const decoder = new TextDecoder('utf-8')
@@ -18,14 +16,19 @@ function BarPlot(){
           setParsedCsvData(rows)
         }
         getData()
-      }, [])
+      }, [props.dataPath])
 
     return(
         <ResponsiveContainer width="100%" height={320}>
         <BarChart data={parsedCsvData}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="month" />
-            <YAxis domain={[0, 'auto']}/>
+            <YAxis domain={[0, 'auto']}
+                   label={{ value: "Percentage of Spine Surgeries (%)",
+                       position: "insideLeft",
+                       angle: -90,
+                       dy: 130}}
+            />
             <Tooltip />
             <Legend />
             <Bar dataKey="7-8%" fill="#AFDDD5" />

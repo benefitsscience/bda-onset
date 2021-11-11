@@ -1,13 +1,12 @@
 import React from 'react';
 import Papa from 'papaparse';
-import csvFile from "../data/Energy Transfer/E-Transfer lineplot.csv";
 import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip} from "recharts";
 
-function LinePlot(){
+function LinePlot(props){
     const [parsedCsvData, setParsedCsvData] = React.useState([]);
       React.useEffect(() => {
         async function getData() {
-          const response = await fetch(csvFile)
+          const response = await fetch(props.dataPath)
           const reader = response.body.getReader()
           const result = await reader.read() // raw array
           const decoder = new TextDecoder('utf-8')
@@ -17,7 +16,7 @@ function LinePlot(){
           setParsedCsvData(rows)
         }
         getData()
-      }, [])
+      }, [props.dataPath])
 
     return(
         <ResponsiveContainer width="100%" height={320}>
@@ -25,7 +24,12 @@ function LinePlot(){
                    margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="month" />
-            <YAxis domain={["dataMin", 'dataMax']}/>
+            <YAxis domain={['dataMin', 'dataMax']}
+                   label={{ value: "Relative difference (%)",
+                       position: "insideLeft",
+                       angle: -90,
+                       dy: 70}}
+            />
             <Tooltip />
             <Legend />
             <Line type="monotone" dataKey="7-8%" stroke="#AFDDD5" strokeWidth={1.7}/>

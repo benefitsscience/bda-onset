@@ -27,15 +27,20 @@ function BSTDashboard() {
                   <PageTwo title={menuOptions[1]}
                            subtitle={headerSubtitles[1]}
                            client={client}
+                           setClient={setClient}
                   />
               </Route>
 
               <Route exact path={"/".concat(menuOptions[2].toLowerCase())}>
-                  <PageThree title={menuOptions[2]} subtitle={headerSubtitles[2]} />
+                  <PageThree title={menuOptions[2]}
+                             subtitle={headerSubtitles[2]}
+                  />
               </Route>
 
               <Route exact path={"/".concat(menuOptions[3].toLowerCase())}>
-                  <PageFour title={menuOptions[3]} subtitle={headerSubtitles[3]} />
+                  <PageFour title={menuOptions[3]}
+                            subtitle={headerSubtitles[3]}
+                  />
               </Route>
           </Switch>
       </Router>

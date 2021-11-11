@@ -4,6 +4,7 @@ import Menu from "../../utilities/menu";
 import Table from "../../technicals/table";
 import Papa from "papaparse";
 import {dataURLs} from "../../utilities/constants";
+import {tableName, tableDescription} from "./page2Text";
 
 const columns = [
   { field: 'id',
@@ -57,17 +58,17 @@ function PageTwo(props) {
           setParsedCsvData(rows)
         }
         getData()
-      }, [])
+      }, [props.client])
 
     return(
         <div>
           <Header title={props.title} subtitle={props.subtitle} />
-          <Menu />
+          <Menu client={props.client} setClient={props.setClient}/>
           <div className="font-inter font-extralight text-3xl text-gray-700 text-center mt-4 mb-1">
-            Table Name
+              {tableName}
           </div>
           <div className="font-inter font-extralight text-gray-600 text-base mx-16 text-justify">
-            Add a description of the dataset, and/or include details about the columns and their dtype.
+              {tableDescription}
           </div>
           <div className="flex justify-center mx-16 my-6">
             <Table rows={parsedCsvData} columns={columns} pageSize={5} />

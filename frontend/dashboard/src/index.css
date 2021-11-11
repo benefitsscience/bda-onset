@@ -16,3 +16,7 @@ hr.margin {
   margin-left: 1rem;
   margin-right: 4rem;
 }
+
+.arrow-down {
+  @apply w-0 h-0 border-l-8 border-r-8 border-t-8 border-purple-600
+}

@@ -1,7 +1,6 @@
 import React from 'react';
-import {PieChart, Pie, Tooltip, Cell, Legend} from 'recharts';
+import {PieChart, Pie, Tooltip, Cell, Legend, ResponsiveContainer} from 'recharts';
 import Papa from "papaparse";
-
 
 const getIntroOfPage = (label) => {
   if (label === '7-8%') {
@@ -37,7 +36,7 @@ function PiePlot(props){
       const [data, setData] = React.useState([]);
       React.useEffect(() => {
         async function getData() {
-          const response = await fetch(props.csv)
+          const response = await fetch(props.dataPath)
           const reader = response.body.getReader()
           const result = await reader.read() // raw array
           const decoder = new TextDecoder('utf-8')
@@ -47,10 +46,11 @@ function PiePlot(props){
           setData(rows)
         }
         getData()
-      }, [])
+      }, [props.dataPath])
 
     return (
-        <PieChart width={350} height={320} margin={{ top: 5, right: 25, left: 25}}>
+        <ResponsiveContainer width={350} height={320}>
+        <PieChart margin={{ top: 5, right: 25, left: 25}}>
         <text x={"50%"}
               y={"5%"}
               textAnchor="end"
@@ -104,6 +104,7 @@ function PiePlot(props){
             ))}
           </Pie>
         </PieChart>
+        </ResponsiveContainer>
     )
 }
 

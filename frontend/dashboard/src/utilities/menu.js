@@ -57,9 +57,12 @@ function ClientMenu(props){
     return (
         <div className="block">
                 <button className="focus:outline-none" onClick={() => setIsClicked(!isClicked)}>
-                    <div className="font-inter text-lg text-gray-900
+                    <div className="flex flex-row items-center font-inter text-lg text-gray-900
                                     font-medium hover:font-bold pr-8">
-                        {props.client}
+                        {props.client}&nbsp;
+                        <div className="w-5 overflow-hidden">
+                            <div className=" h-2 w-2 bg-black -rotate-45 transform origin-top-left"></div>
+                        </div>
                     </div>
                 </button>
                 <ClientDropdown isClicked={isClicked}
@@ -134,7 +137,6 @@ export function ClientDropdown(props) {
 
 
 function Menu(props) {
-
     return(
         <div className="w-screen h-auto bg-gray-100">
             <HorizontalMenu menuOptions={menuOptions}
@@ -150,6 +152,5 @@ function Menu(props) {
         </div>
     )
 }
-
 
 export default Menu

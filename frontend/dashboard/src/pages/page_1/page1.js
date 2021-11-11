@@ -6,9 +6,8 @@ import Box, {PieBox} from "../../utilities/box";
 import LinePlot from "../../technicals/lineplot";
 import BarPlot from "../../technicals/barplot";
 import PiePlot from "../../technicals/pieplot";
-import csv1 from "../../data/Energy Transfer/E-Transfer Pie1.csv";
-import csv2 from "../../data/Energy Transfer/E-Transfer Pie2.csv";
-import {popColors, onsetColors} from "../../utilities/constants";
+import {popColors, onsetColors, dataURLs} from "../../utilities/constants";
+import {projectDescription, indicators, chartTitles, plotDescriptions} from "./page1Text";
 
 function PageOne(props) {
     return(
@@ -17,37 +16,44 @@ function PageOne(props) {
             <Menu client={props.client} setClient={props.setClient}/>
 
             <div className="font-inter font-extralight text-gray-600 text-base mx-4 pt-4 text-justify">
-                Add a description of the indicators or briefly explain the purpose of the Insight section.
-                <br/>
-                This can go over multiple lines.
+                {projectDescription}
             </div>
 
             <div className="flex flex-col ml:flex-row justify-evenly items-center pt-4 pb-6 gap-6">
-                <Indicator value={1000} name={"Total Population"} tooltip={"Add more info"}/>
-                <Indicator value={20} name={"Population At-Risk"} tooltip={"Add more info"}/>
+                <Indicator dataPath={dataURLs[props.client]["pie1"]} name={indicators[0]["name"]} tooltip={indicators[0]["tooltip"]}/>
+                <Indicator dataPath={dataURLs[props.client]["pie1"]} name={indicators[1]["name"]} tooltip={indicators[1]["tooltip"]}/>
             </div>
 
             <div className="flex flex-col">
                 <div className="ml:grid grid-flow-row grid-cols-2 grid-rows-2 gap-4 ml:m-4">
-                    <Box text={"Line chart title"} plot={<LinePlot/>}/>
-                    <Box text={"Bar chart title"} plot={<BarPlot/>}/>
+                    <Box title={chartTitles[0]}
+                         plot={<LinePlot dataPath={dataURLs[props.client]["line"]}/>}
+                         text={plotDescriptions["lineBox"]}
+                    />
+                    <Box title={chartTitles[1]}
+                         plot={<BarPlot dataPath={dataURLs[props.client]["bar"]}/>}
+                         text={plotDescriptions["barBox"]}
+                    />
                     <PieBox
-                        text={"Pie chart title"}
+                        title={chartTitles[2]}
                         plot1={<PiePlot
-                            csv={csv1}
+                            dataPath={dataURLs[props.client]["pie1"]}
                             colors={popColors}
                             title={"Total Population"}
                             symbol={''}
                         />}
                         plot2={<PiePlot
-                            csv={csv2}
+                            dataPath={dataURLs[props.client]["pie2"]}
                             colors={onsetColors}
                             title={"Onset Breakdown"}
                             symbol={"%"}
                         />}
-
+                        text={plotDescriptions["pieBox"]}
                     />
-                    <Box text={"Summary stats title"} plot={<LinePlot/>}/>
+                    <Box title={chartTitles[3]}
+                         plot={<LinePlot dataPath={dataURLs[props.client]["line"]}/>}
+                         text={plotDescriptions["newBox"]}
+                    />
                 </div>
             </div>
             <div className="p-4"/>
