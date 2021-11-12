@@ -46,13 +46,19 @@ function PageOne(props) {
                          plot={<BarPlot dataPath={dataURLs[props.client]["bar"]}/>}
                          text={plotDescriptions["barBox"]}
                     />
-                    <Box title={chartTitles[3]}
-                         plot={<LinePlot dataPath={dataURLs[props.client]["line"]}/>}
-                         text={plotDescriptions["newBox"]}
-                    />
                     <Box title={chartTitles[0]}
-                         plot={<LinePlot dataPath={dataURLs[props.client]["line"]}/>}
+                         plot={<LinePlot dataPath={dataURLs[props.client]["line"]}
+                                         zeroLine={true}
+                                         yaxisTitle={"Relative Difference (%)"}
+                         />}
                          text={plotDescriptions["lineBox"]}
+                    />
+                    <Box title={chartTitles[3]}
+                         plot={<LinePlot dataPath={dataURLs[props.client]["line"]}
+                                         zeroLine={false}
+                                         yaxisTitle={"Universal Difference (%)"}
+                         />}
+                         text={plotDescriptions["newBox"]}
                     />
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Papa from 'papaparse';
-import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip} from "recharts";
+import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip, ReferenceLine} from "recharts";
 import {onsetColors} from "../utilities/constants";
 
 function LinePlot(props){
@@ -19,6 +19,7 @@ function LinePlot(props){
         getData()
       }, [props.dataPath])
 
+
     return(
         <ResponsiveContainer width="100%" height={320}>
         <LineChart data={parsedCsvData}
@@ -26,14 +27,15 @@ function LinePlot(props){
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="month" />
             <YAxis domain={['dataMin', 'dataMax']}
-                   label={{ value: "Relative difference (%)",
+                   label={{ value: props.yaxisTitle,
                        position: "insideLeft",
                        angle: -90,
                        dy: 70}}
             />
             <Tooltip />
             <Legend />
-            <Line type="monotone" dataKey="7-8%" stroke={onsetColors[0]} strokeWidth={2}/>
+            {props.zeroLine && <ReferenceLine y={0} stroke="black" strokeWidth={2} />}
+            <Line type="monotone" dataKey="7-8%" stroke={onsetColors[0]} strokeWidth={1.5}/>
             <Line type="monotone" dataKey="2-4%" stroke={onsetColors[1]} strokeWidth={2}/>
             <Line type="monotone" dataKey="1-2%" stroke={onsetColors[2]} strokeWidth={2}/>
             <Line type="monotone" dataKey="0.4-0.6%" stroke={onsetColors[3]} strokeWidth={2}/>
