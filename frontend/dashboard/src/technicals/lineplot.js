@@ -1,6 +1,7 @@
 import React from 'react';
 import Papa from 'papaparse';
 import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip} from "recharts";
+import {onsetColors} from "../utilities/constants";
 
 function LinePlot(props){
     const [parsedCsvData, setParsedCsvData] = React.useState([]);
@@ -32,10 +33,10 @@ function LinePlot(props){
             />
             <Tooltip />
             <Legend />
-            <Line type="monotone" dataKey="7-8%" stroke="#AFDDD5" strokeWidth={1.7}/>
-            <Line type="monotone" dataKey="2-4%" stroke="#FFA700" strokeWidth={1.7}/>
-            <Line type="monotone" dataKey="1-2%" stroke="#FFCCCD" strokeWidth={1.7}/>
-            <Line type="monotone" dataKey="0.4-0.6%" stroke="#64864A" strokeWidth={1.7}/>
+            <Line type="monotone" dataKey="7-8%" stroke={onsetColors[0]} strokeWidth={2}/>
+            <Line type="monotone" dataKey="2-4%" stroke={onsetColors[1]} strokeWidth={2}/>
+            <Line type="monotone" dataKey="1-2%" stroke={onsetColors[2]} strokeWidth={2}/>
+            <Line type="monotone" dataKey="0.4-0.6%" stroke={onsetColors[3]} strokeWidth={2}/>
         </LineChart>
         </ResponsiveContainer>
     )

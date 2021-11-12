@@ -50,15 +50,15 @@ export const contactDetails = [
 
 export const popColors = [
     '#685268',
-    '#FFCD73'
+    '#FFA23A'
 ]
 
 
 export const onsetColors = [
-    "#AFDDD5",
-    '#FFA700',
-    '#FFCCCD',
-    '#64864A'
+    "#00A5E3",
+    '#FC6238',
+    '#C05780',
+    '#00CDAC'
 ]
 
 
