@@ -26,14 +26,6 @@ function PageOne(props) {
 
             <div className="flex flex-col">
                 <div className="ml:grid grid-flow-row grid-cols-2 grid-rows-2 gap-4 ml:m-4">
-                    <Box title={chartTitles[0]}
-                         plot={<LinePlot dataPath={dataURLs[props.client]["line"]}/>}
-                         text={plotDescriptions["lineBox"]}
-                    />
-                    <Box title={chartTitles[1]}
-                         plot={<BarPlot dataPath={dataURLs[props.client]["bar"]}/>}
-                         text={plotDescriptions["barBox"]}
-                    />
                     <PieBox
                         title={chartTitles[2]}
                         plot1={<PiePlot
@@ -50,9 +42,17 @@ function PageOne(props) {
                         />}
                         text={plotDescriptions["pieBox"]}
                     />
+                    <Box title={chartTitles[1]}
+                         plot={<BarPlot dataPath={dataURLs[props.client]["bar"]}/>}
+                         text={plotDescriptions["barBox"]}
+                    />
                     <Box title={chartTitles[3]}
                          plot={<LinePlot dataPath={dataURLs[props.client]["line"]}/>}
                          text={plotDescriptions["newBox"]}
+                    />
+                    <Box title={chartTitles[0]}
+                         plot={<LinePlot dataPath={dataURLs[props.client]["line"]}/>}
+                         text={plotDescriptions["lineBox"]}
                     />
                 </div>
             </div>
