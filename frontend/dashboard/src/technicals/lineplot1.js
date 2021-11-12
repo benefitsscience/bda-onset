@@ -25,7 +25,7 @@ function LinePlot1(props){
         <LineChart data={parsedCsvData}
                    margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="month" />
+            <XAxis dataKey="Month" />
             <YAxis domain={['dataMin', 'dataMax']}
                    label={{ value: props.yaxisTitle,
                        position: "insideLeft",
