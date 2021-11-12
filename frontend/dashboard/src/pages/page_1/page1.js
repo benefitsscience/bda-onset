@@ -4,6 +4,7 @@ import Menu from "../../utilities/menu";
 import Indicator from "../../technicals/indicator";
 import Box, {PieBox} from "../../utilities/box";
 import LinePlot from "../../technicals/lineplot";
+import LinePlot1 from "../../technicals/lineplot1";
 import BarPlot from "../../technicals/barplot";
 import PiePlot from "../../technicals/pieplot";
 import {popColors, onsetColors, dataURLs} from "../../utilities/constants";
@@ -48,14 +49,12 @@ function PageOne(props) {
                     />
                     <Box title={chartTitles[0]}
                          plot={<LinePlot dataPath={dataURLs[props.client]["line"]}
-                                         zeroLine={true}
                                          yaxisTitle={"Relative Difference (%)"}
                          />}
                          text={plotDescriptions["lineBox"]}
                     />
                     <Box title={chartTitles[3]}
-                         plot={<LinePlot dataPath={dataURLs[props.client]["line"]}
-                                         zeroLine={false}
+                         plot={<LinePlot1 dataPath={dataURLs[props.client]["line1"]}
                                          yaxisTitle={"Universal Difference (%)"}
                          />}
                          text={plotDescriptions["newBox"]}

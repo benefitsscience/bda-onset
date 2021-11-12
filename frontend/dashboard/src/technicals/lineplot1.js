@@ -1,9 +1,9 @@
 import React from 'react';
 import Papa from 'papaparse';
-import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip, ReferenceLine} from "recharts";
+import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip} from "recharts";
 import {onsetColors} from "../utilities/constants";
 
-function LinePlot(props){
+function LinePlot1(props){
     const [parsedCsvData, setParsedCsvData] = React.useState([]);
       React.useEffect(() => {
         async function getData() {
@@ -30,18 +30,17 @@ function LinePlot(props){
                    label={{ value: props.yaxisTitle,
                        position: "insideLeft",
                        angle: -90,
-                       dy: 70}}
+                       dy: 90,
+                       dx: -15
+                   }}
             />
             <Tooltip />
             <Legend />
-            <ReferenceLine y={0} stroke="black" strokeWidth={2}/>
-            <Line type="monotone" dataKey="7-8%" stroke={onsetColors[0]} strokeWidth={1.5}/>
-            <Line type="monotone" dataKey="2-4%" stroke={onsetColors[1]} strokeWidth={2}/>
-            <Line type="monotone" dataKey="1-2%" stroke={onsetColors[2]} strokeWidth={2}/>
-            <Line type="monotone" dataKey="0.4-0.6%" stroke={onsetColors[3]} strokeWidth={2}/>
+            <Line type="monotone" dataKey="ONSET" stroke={onsetColors[0]} strokeWidth={1.5}/>
+            <Line type="monotone" dataKey="Universal" stroke={onsetColors[1]} strokeWidth={1.5}/>
         </LineChart>
         </ResponsiveContainer>
     )
 }
 
-export default LinePlot
+export default LinePlot1
