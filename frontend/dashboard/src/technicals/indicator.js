@@ -23,7 +23,7 @@ function Indicator(props) {
     }, [props.dataPath])
 
     let value;
-    if (data.length && props.name === indicators[0]["name"]){value = data[0]["value"]}
+    if (data.length && props.name === indicators[0]["name"]){value = data[0]["value"] + data[0]["value"]}
     else if (data.length && props.name === indicators[1]["name"]){value = data[1]["value"]}
     else {value = 0}
 
