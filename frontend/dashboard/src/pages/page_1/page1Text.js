@@ -3,7 +3,7 @@
 export const projectDescription = "The following graphs depict probabilities of ONSET for spine surgery " +
 "within each company's at risk population over time, and relative differences with the universal average"+
  " calculated in the population at large (multi-company aggregation). In the general population of BST dataset,"+
- "the probability of a person requiring spine surgery in the next 12 months = 0.24% "
+ " the probability of a person requiring spine surgery in the next 12 months = 0.24% "
 
 // List of dictionaries. Each entry corresponds to each indicator left to right
 export const indicators = [
@@ -16,7 +16,7 @@ export const chartTitles = [
     "Relative Difference with Universal Average",
     "Percentage of Spine Surgery by Risk Group",
     "Distribution of Spine Surgery",
-    "Additional Plot"
+    "Overall Probability of ONSET for Spine Surgery"
 ]
 
 // Dict of dictionaries each one has description for one box with an `intro` and a `discussion`
@@ -40,7 +40,8 @@ export const plotDescriptions = {
             },
         "newBox":
             {
-                "intro": " ",
-                "discussion": " "
+                "intro": "General probability of a person requiring spine surgery in the next 12 months ",
+                "discussion": "note: In overall population of BST data set, the probability of a person requiring"+
+                 " spine surgery in the next 12 months is 0.24% "
             }
     }

@@ -49,13 +49,13 @@ function PageOne(props) {
                     />
                     <Box title={chartTitles[0]}
                          plot={<LinePlot dataPath={dataURLs[props.client]["line"]}
-                                         yaxisTitle={"Relative Difference (%)"}
+                                         yaxisTitle={"Relative Diff with Univ Avg (%)"}
                          />}
                          text={plotDescriptions["lineBox"]}
                     />
                     <Box title={chartTitles[3]}
                          plot={<LinePlot1 dataPath={dataURLs[props.client]["line1"]}
-                                         yaxisTitle={"Universal Difference (%)"}
+                                         yaxisTitle={"General ONSET Probability (%)"}
                          />}
                          text={plotDescriptions["newBox"]}
                     />

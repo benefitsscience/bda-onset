@@ -30,7 +30,7 @@ function LinePlot(props){
                    label={{ value: props.yaxisTitle,
                        position: "insideLeft",
                        angle: -90,
-                       dy: 70}}
+                       dy: 120}}
             />
             <Tooltip />
             <Legend />
