@@ -1,7 +1,7 @@
 import React from 'react';
 import Papa from 'papaparse';
 import {Bar, BarChart, CartesianGrid, Legend, XAxis, YAxis, Tooltip, ResponsiveContainer} from "recharts";
-import {onsetColors} from "../utilities/constants";
+import {onsetColors} from "../pages/constants";
 
 function BarPlot(props){
     const [parsedCsvData, setParsedCsvData] = React.useState([]);

@@ -1,7 +1,7 @@
 import React from 'react';
 import Papa from 'papaparse';
 import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip} from "recharts";
-import {onsetColors} from "../utilities/constants";
+import {onsetColors} from "../pages/constants";
 
 function LinePlot1(props){
     const [parsedCsvData, setParsedCsvData] = React.useState([]);

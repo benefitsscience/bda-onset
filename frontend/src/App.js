@@ -1,20 +1,21 @@
 import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
-import {menuOptions, headerSubtitles} from "./utilities/constants";
+import {menuOptions, headerSubtitles} from "./pages/constants";
 import PageOne from "./pages/page_1/template";
 import PageTwo from "./pages/page_2/template";
 import PageThree from "./pages/page_3/template";
 import PageFour from "./pages/page_4/template";
-import {clientNames, conditionNames} from "./utilities/constants";
+import {clientNames, conditionNames} from "./pages/constants";
 
 
 function BSTDashboard() {
+    // Initialize constants
     const [client, setClient] = React.useState(clientNames[0])
     const [condition, setCondition] = React.useState(conditionNames[0])
     const [data, setData] = React.useState([])
 
-    // Add effect post-rendering
+    // Fetch data
     useEffect(() => {
         const requestOptions = {
             method: 'POST',
@@ -31,9 +32,7 @@ function BSTDashboard() {
       <Router>
           <Switch>
               <Route exact path={"/"}>
-                  <PageOne title={menuOptions[0]}
-                           subtitle={headerSubtitles[0]}
-                           client={client}
+                  <PageOne client={client}
                            setClient={setClient}
                            condition={condition}
                            setCondition={setCondition}

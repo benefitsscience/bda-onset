@@ -1,30 +1,15 @@
 import React from "react";
-import Papa from "papaparse";
-import {indicators} from "../pages/page_1/content";
+import {content} from "../pages/page_1/content";
 
 function Indicator(props) {
-    const [data, setData] = React.useState([]);
-    React.useEffect(() => {
-        async function getData() {
-          const response = await fetch(props.dataPath)
-          const reader = response.body.getReader()
-          const result = await reader.read() // raw array
-          const decoder = new TextDecoder('utf-8')
-          const csv = decoder.decode(result.value) // the csv text
-          const results = Papa.parse(csv, {
-              header: true,
-              complete(results, file) {console.log(results.data)
-              },
-              dynamicTyping: true}) // object with { data, errors, meta }
-          const rows = results.data // array of objects
-          setData(rows)
-        }
-        getData()
-    }, [props.dataPath])
 
     let value;
-    if (data.length && props.name === indicators[0]["name"]){value = data[0]["value"] + data[1]["value"]}
-    else if (data.length && props.name === indicators[1]["name"]){value = data[1]["value"]}
+    if (
+        props.data.length && props.name === content["indicators"][0]["name"]
+    ){value = props.data[0]["value"] + props.data[1]["value"]}
+    else if (
+        props.data.length && props.name === content["indicators"][1]["name"])
+    {value = props.data[1]["value"]}
     else {value = 0}
 
     return(

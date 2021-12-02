@@ -1,4 +1,4 @@
-import {contactDetails} from "./constants";
+import {contactDetails} from "../pages/constants";
 import contact_img from "../../public/profile.jpg"
 import {useState} from "react";
 

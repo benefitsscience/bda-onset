@@ -3,7 +3,7 @@ import Header from "../../utilities/header";
 import Menu from "../../utilities/menu";
 import Table from "../../technicals/table";
 import Papa from "papaparse";
-import {dataURLs} from "../../utilities/constants";
+import {dataURLs} from "../constants";
 import {tableName, tableDescription} from "./content";
 
 const columns = [

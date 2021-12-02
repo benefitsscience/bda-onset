@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React, {useState} from "react";
 import {Fade} from "@material-ui/core";
-import {menuOptions, clientNames} from "./constants";
+import {menuOptions, clientNames} from "../pages/constants";
 
 function HorizontalMenu(props) {
     const itemsLayout = [];
