@@ -32,7 +32,7 @@ def process_data(client: str, condition: str):
         "pie_onset": pd.read_csv(os.path.join(condition_dir, "pie_onset.csv")).to_json(orient="records"),
         "lineplot": pd.read_csv(os.path.join(condition_dir, "lineplot.csv")).to_json(orient="records"),
         "avg_lineplot": pd.read_csv(os.path.join(condition_dir, "avg_lineplot.csv")).to_json(orient="records"),
-        "table": pd.read_csv(os.path.join(condition_dir, "pie_pop.csv")).to_json(orient="table")
+        "table": pd.read_csv(os.path.join(condition_dir, "pie_pop.csv")).to_json(orient="records")
     }
     return outputs
 
