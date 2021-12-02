@@ -1,6 +1,5 @@
 import React from 'react';
 import {PieChart, Pie, Tooltip, Cell, Legend, ResponsiveContainer} from 'recharts';
-import Papa from "papaparse";
 
 const getIntroOfPage = (label) => {
   if (label === '7-8%') {
@@ -27,27 +26,11 @@ const CustomTooltip = ({ active, payload, symbol}) => {
       </div>
     );
   }
-
   return null;
 };
 
 
 function PiePlot(props){
-      const [data, setData] = React.useState([]);
-      React.useEffect(() => {
-        async function getData() {
-          const response = await fetch(props.dataPath)
-          const reader = response.body.getReader()
-          const result = await reader.read() // raw array
-          const decoder = new TextDecoder('utf-8')
-          const csv = decoder.decode(result.value) // the csv text
-          const results = Papa.parse(csv, {header: true, dynamicTyping: true}) // object with { data, errors, meta }
-          const rows = results.data // array of object
-          setData(rows)
-        }
-        getData()
-      }, [props.dataPath])
-
     return (
         <ResponsiveContainer width={350} height={320}>
         <PieChart margin={{ top: 5, right: 25, left: 25}}>
@@ -61,7 +44,7 @@ function PiePlot(props){
         <Tooltip content={<CustomTooltip symbol={props.symbol}/>} />
         <Legend />
           <Pie
-              data={data}
+              data={props.data}
               dataKey="value"
               cx="50%"
               cy="50%"
@@ -78,11 +61,8 @@ function PiePlot(props){
                     }) => {
                       console.log("handling label?");
                       const RADIAN = Math.PI / 180;
-                      // eslint-disable-next-line
                       const radius = 25 + innerRadius + (outerRadius - innerRadius);
-                      // eslint-disable-next-line
                       const x = cx + radius * Math.cos(-midAngle * RADIAN);
-                      // eslint-disable-next-line
                       const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
                       return (
@@ -99,7 +79,7 @@ function PiePlot(props){
               }}
               legendType="triangle"
           >
-              {data.map((entry, index) => (
+              {props.data.map((entry, index) => (
               <Cell key={`${index}%`} fill={props.colors[index % props.colors.length]} />
             ))}
           </Pie>

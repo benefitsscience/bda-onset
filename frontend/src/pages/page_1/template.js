@@ -3,8 +3,7 @@ import Header from "../../utilities/header";
 import Menu from "../../utilities/menu";
 import Indicator from "../../technicals/indicator";
 import Box, {PieBox} from "../../utilities/box";
-import LinePlot from "../../technicals/lineplot";
-import LinePlot1 from "../../technicals/lineplot1";
+import {OnsetLinePlot, UniversalLinePlot} from "../../technicals/lineplot";
 import BarPlot from "../../technicals/barplot";
 import PiePlot from "../../technicals/pieplot";
 import {popColors, onsetColors} from "../constants";
@@ -52,14 +51,14 @@ function PageOne(props) {
                          text={content["boxDescription"][1]}
                     />
                     <Box title={content["boxTitles"][0]}
-                         plot={<LinePlot
+                         plot={<OnsetLinePlot
                              data={props.data["lineplot"]}
                              yaxisTitle={"Relative Diff with Univ Avg (%)"}
                          />}
                          text={content["boxDescription"][0]}
                     />
                     <Box title={content["boxTitles"][3]}
-                         plot={<LinePlot1
+                         plot={<UniversalLinePlot
                              data={props.data["avg_lineplot"]}
                              yaxisTitle={"General ONSET Probability (%)"}
                          />}

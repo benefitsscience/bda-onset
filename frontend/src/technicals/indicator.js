@@ -2,7 +2,6 @@ import React from "react";
 import {content} from "../pages/page_1/content";
 
 function Indicator(props) {
-
     let value;
     if (
         props.data.length && props.name === content["indicators"][0]["name"]
@@ -28,5 +27,4 @@ function Indicator(props) {
         </div>
     )
 }
-
 export default Indicator

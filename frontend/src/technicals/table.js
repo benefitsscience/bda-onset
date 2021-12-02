@@ -3,8 +3,6 @@ import { DataGrid } from '@material-ui/data-grid';
 import {makeStyles, createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
 
 function Table(props){
-
-    // `body2` corresponds to Table text-body.
     const THEME = createMuiTheme({
       typography: {
         "fontFamily": "inter",
@@ -44,5 +42,4 @@ function Table(props){
         </div>
     )
 }
-
 export default Table

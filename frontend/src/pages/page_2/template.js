@@ -2,8 +2,6 @@ import React from 'react';
 import Header from "../../utilities/header";
 import Menu from "../../utilities/menu";
 import Table from "../../technicals/table";
-import Papa from "papaparse";
-import {dataURLs} from "../constants";
 import {tableName, tableDescription} from "./content";
 
 const columns = [
@@ -42,24 +40,6 @@ const columns = [
 
 
 function PageTwo(props) {
-    const [parsedCsvData, setParsedCsvData] = React.useState([]);
-      React.useEffect(() => {
-        async function getData() {
-          const response = await fetch(dataURLs[props.client]["table"])
-          const reader = response.body.getReader()
-          const result = await reader.read() // raw array
-          const decoder = new TextDecoder('utf-8')
-          const csv = decoder.decode(result.value) // the csv text
-          const results = Papa.parse(csv,
-              { header: true, complete: function(results) {
-                  console.log("Finished:", results.data);
-                  }}) // object with { data, errors, meta }
-          const rows = results.data // array of objects
-          setParsedCsvData(rows)
-        }
-        getData()
-      }, [props.client])
-
     return(
         <div>
           <Header title={props.title} subtitle={props.subtitle} />
@@ -71,7 +51,7 @@ function PageTwo(props) {
               {tableDescription}
           </div>
           <div className="flex justify-center mx-16 my-6">
-            <Table rows={parsedCsvData} columns={columns} pageSize={5} />
+            <Table rows={props.data} columns={columns} pageSize={5} />
           </div>
         </div>
     )
