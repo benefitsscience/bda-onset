@@ -4,7 +4,7 @@ import Menu from "../../utilities/menu";
 import Table from "../../technicals/table";
 import Papa from "papaparse";
 import {dataURLs} from "../../utilities/constants";
-import {tableName, tableDescription} from "./page2Text";
+import {tableName, tableDescription} from "./content";
 
 const columns = [
   { field: 'id',

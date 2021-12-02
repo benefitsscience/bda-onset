@@ -10,6 +10,6 @@ app = Flask(__name__)
 @app.route('/data', methods=['POST'])
 def get_data():
     inputs = request.get_json()
-    client, condition = inputs["client"], inputs["condition"]
+    client, condition = inputs["Client"], inputs["Condition"]
     outputs = process_data(client, condition)
     return jsonify(outputs)

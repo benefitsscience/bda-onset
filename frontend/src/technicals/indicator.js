@@ -1,6 +1,6 @@
 import React from "react";
 import Papa from "papaparse";
-import {indicators} from "../pages/page_1/page1Text";
+import {indicators} from "../pages/page_1/content";
 
 function Indicator(props) {
     const [data, setData] = React.useState([]);

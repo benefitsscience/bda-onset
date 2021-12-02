@@ -8,7 +8,7 @@ import LinePlot1 from "../../technicals/lineplot1";
 import BarPlot from "../../technicals/barplot";
 import PiePlot from "../../technicals/pieplot";
 import {popColors, onsetColors, dataURLs} from "../../utilities/constants";
-import {projectDescription, indicators, chartTitles, plotDescriptions} from "./page1Text";
+import {projectDescription, indicators, chartTitles, plotDescriptions} from "./content";
 
 function PageOne(props) {
     return(

@@ -1,5 +1,5 @@
 import {contactDetails} from "./constants";
-import contact_img from "../images/example.jpg"
+import contact_img from "../../public/profile.jpg"
 import {useState} from "react";
 
 
