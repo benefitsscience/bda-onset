@@ -19,7 +19,7 @@ export function OnsetLinePlot(props){
                    label={{ value: props.yaxisTitle,
                        position: "insideLeft",
                        angle: -90,
-                       dy: 120}}
+                       dy: 180}}
             />
             <Tooltip />
             <Legend />
@@ -48,7 +48,7 @@ export function UniversalLinePlot(props){
                    label={{ value: props.yaxisTitle,
                        position: "insideLeft",
                        angle: -90,
-                       dy: 90,
+                       dy: 120,
                        dx: -15
                    }}
             />

@@ -56,7 +56,7 @@ function PageOne(props) {
                     <Box title={content["boxTitles"][0]}
                          plot={<OnsetLinePlot
                              data={props.data["lineplot"]}
-                             yaxisTitle={"Relative Diff with Univ Avg (%)"}
+                             yaxisTitle={"Relative Difference with Universal Avg (%)"}
                          />}
                          text={content["boxDescription"][0]}
                     />
