@@ -3,15 +3,12 @@ import {Bar, BarChart, CartesianGrid, Legend, XAxis, YAxis, Tooltip, ResponsiveC
 import {onsetColors} from "../pages/constants";
 
 function BarPlot(props){
-
     const firstEntry = props.data[0]
-    console.log(firstEntry)
     let labels = []
     for (const [key, ] of Object.entries(firstEntry)) {
         if (key !== "month"){labels.push(key);}
     }
     labels = labels.slice(0, -1)
-
     return(
         <ResponsiveContainer width="100%" height={320}>
         <BarChart data={props.data}>

@@ -3,6 +3,12 @@ import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxi
 import {onsetColors} from "../pages/constants";
 
 export function OnsetLinePlot(props){
+    const firstEntry = props.data[0]
+    let labels = []
+    for (const [key, ] of Object.entries(firstEntry)) {
+        if (key !== "month"){labels.push(key);}
+    }
+    labels = labels.slice(0, -1)
     return(
         <ResponsiveContainer width="100%" height={320}>
         <LineChart data={props.data}
@@ -18,16 +24,20 @@ export function OnsetLinePlot(props){
             <Tooltip />
             <Legend />
             <ReferenceLine y={0} stroke="black" strokeWidth={2}/>
-            <Line type="monotone" dataKey="7-8%" stroke={onsetColors[0]} strokeWidth={1.5}/>
-            <Line type="monotone" dataKey="2-4%" stroke={onsetColors[1]} strokeWidth={2}/>
-            <Line type="monotone" dataKey="1-2%" stroke={onsetColors[2]} strokeWidth={2}/>
-            <Line type="monotone" dataKey="0.4-0.6%" stroke={onsetColors[3]} strokeWidth={2}/>
+            {labels.map((label, index) => (
+                <Line type="monotone" dataKey={label} stroke={onsetColors[index]} strokeWidth={1.5}/>
+                ))}
         </LineChart>
         </ResponsiveContainer>
     )
 }
 
 export function UniversalLinePlot(props){
+    const firstEntry = props.data[0]
+    let labels = []
+    for (const [key, ] of Object.entries(firstEntry)) {
+        if (key !== "month"){labels.push(key);}
+    }
     return(
         <ResponsiveContainer width="100%" height={320}>
         <LineChart data={props.data}
@@ -44,8 +54,9 @@ export function UniversalLinePlot(props){
             />
             <Tooltip />
             <Legend />
-            <Line type="monotone" dataKey="ONSET" stroke={onsetColors[0]} strokeWidth={1.5}/>
-            <Line type="monotone" dataKey="Universal" stroke={onsetColors[1]} strokeWidth={1.5}/>
+            {labels.map((label, index) => (
+                <Line type="monotone" dataKey={label} stroke={onsetColors[index]} strokeWidth={1.5}/>
+                ))}
         </LineChart>
         </ResponsiveContainer>
     )
