@@ -3,6 +3,15 @@ import {Bar, BarChart, CartesianGrid, Legend, XAxis, YAxis, Tooltip, ResponsiveC
 import {onsetColors} from "../pages/constants";
 
 function BarPlot(props){
+
+    const firstEntry = props.data[0]
+    console.log(firstEntry)
+    let labels = []
+    for (const [key, ] of Object.entries(firstEntry)) {
+        if (key !== "month"){labels.push(key);}
+    }
+    labels = labels.slice(0, -1)
+
     return(
         <ResponsiveContainer width="100%" height={320}>
         <BarChart data={props.data}>
@@ -16,10 +25,11 @@ function BarPlot(props){
             />
             <Tooltip />
             <Legend />
-            <Bar dataKey="7-8%" fill={onsetColors[0]} />
-            <Bar dataKey="2-4%" fill={onsetColors[1]}/>
-            <Bar dataKey="1-2%" fill={onsetColors[2]}/>
-            <Bar dataKey="0.4-0.6%" fill={onsetColors[3]}/>
+            {labels.map((label, index) => (
+                <Bar
+                    dataKey={label}
+                    fill={onsetColors[index]}/>
+            ))}
         </BarChart>
         </ResponsiveContainer>
     )
