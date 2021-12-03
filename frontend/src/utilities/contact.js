@@ -1,4 +1,3 @@
-import {contactDetails} from "../pages/constants";
 import contact_img from "../images/profile.jpg"
 import {useState} from "react";
 
@@ -21,11 +20,12 @@ function ContactCard(props){
             <div className="max-w-sm w-96 bg-gray-100 rounded-2xl shadow-md overflow-hidden">
                 <img className="h-36 w-full object-cover" src={contact_img} alt={"Profile picture Omid"} />
                 <div  className="p-6">
-                    <a className="font-inter font-extralight hover:font-normal text-2xl text-gray-600" href={contactDetails[props.id].website}>
-                        {contactDetails[props.id].name}
+                    <a className="font-inter font-extralight hover:font-normal text-2xl text-gray-600"
+                       href={props.contacts[props.id].website}>
+                        {props.contacts[props.id].name}
                     </a>
                     <div className="font-inter font-normal text-base mt-1 mb-2">
-                        {contactDetails[props.id].title}
+                        {props.contacts[props.id].title}
                     </div>
                     <div className="font-inter font-extralight text-gray-500 text-sm text-justify">
                         Omid leads the Data Science team at Benefits Science in the development of
@@ -61,13 +61,13 @@ function ContactCard(props){
                         E-mail
                     </div>
                     <div className="font-inter font-extralight text-sm text-gray-500">
-                        {contactDetails[props.id].email}
+                        {props.contacts[props.id].email}
                     </div>
                     <div className="font-inter font-normal text-base mt-1">
                         Phone
                     </div>
                     <div className="font-inter font-extralight text-sm text-gray-500">
-                        {contactDetails[props.id].phone}
+                        {props.contacts[props.id].phone}
                     </div>
                 </div>
             </div>
