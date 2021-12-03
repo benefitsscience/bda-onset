@@ -59,7 +59,6 @@ function PiePlot(props){
                       value,
                       index
                     }) => {
-                      console.log("handling label?");
                       const RADIAN = Math.PI / 180;
                       const radius = 25 + innerRadius + (outerRadius - innerRadius);
                       const x = cx + radius * Math.cos(-midAngle * RADIAN);
@@ -67,7 +66,7 @@ function PiePlot(props){
 
                       return (
                         <text
-                        fill={props.colors[index % props.colors.length]}
+                        fill={props.colors[index]}
                           x={x}
                           y={y}
                           textAnchor={x > cx ? "start" : "end"}
@@ -80,7 +79,7 @@ function PiePlot(props){
               legendType="triangle"
           >
               {props.data.map((entry, index) => (
-              <Cell key={`${index}%`} fill={props.colors[index % props.colors.length]} />
+              <Cell key={`${index}%`} fill={props.colors[index]} />
             ))}
           </Pie>
         </PieChart>

@@ -1,4 +1,6 @@
 import os
+
+import numpy as np
 import pandas as pd
 
 BACKEND_DIR = os.path.abspath("")
@@ -26,13 +28,31 @@ def process_data(client: str, condition: str):
 
     print(f"---  Fetching data for client {client} with condition {condition}  ---")
 
+    barplot = pd.read_csv(os.path.join(condition_dir, "barplot.csv"))
+    lineplot = pd.read_csv(os.path.join(condition_dir, "lineplot.csv"))
+    pieplot_pop = pd.read_csv(os.path.join(condition_dir, "pie_pop.csv"))
+    pieplot_onset = pd.read_csv(os.path.join(condition_dir, "pie_onset.csv"))
+    lineplot_avg = pd.read_csv(os.path.join(condition_dir, "avg_lineplot.csv"))
+    table = pd.read_csv(os.path.join(condition_dir, "table.csv"))
+
+    # Sort columns (string dtype)
+    columns = barplot.columns.sort_values()
+    barplot = barplot.loc[:, columns]
+    lineplot = lineplot.loc[:, columns]
+
+    # Sort Pie data so that each row has `name` in the same order as `columns`
+    # This is necessary because json response on the `frontend` automatically sorts keys of each dataframe
+    # We want plots to have matching colors, so we sort each dataframe accordingly
+    idxs = [np.where(columns == i)[0][0] for i in pieplot_onset["name"]]
+    pieplot_onset = pieplot_onset.loc[idxs, :].reset_index(drop=True)
+
     outputs = {
-        "barplot": pd.read_csv(os.path.join(condition_dir, "barplot.csv")).to_dict(orient="records"),
-        "pie_pop": pd.read_csv(os.path.join(condition_dir, "pie_pop.csv")).to_dict(orient="records"),
-        "pie_onset": pd.read_csv(os.path.join(condition_dir, "pie_onset.csv")).to_dict(orient="records"),
-        "lineplot": pd.read_csv(os.path.join(condition_dir, "lineplot.csv")).to_dict(orient="records"),
-        "avg_lineplot": pd.read_csv(os.path.join(condition_dir, "avg_lineplot.csv")).to_dict(orient="records"),
-        "table": pd.read_csv(os.path.join(condition_dir, "table.csv")).to_dict(orient="records")
+        "barplot": barplot.to_dict(orient="records"),
+        "pie_pop": pieplot_pop.to_dict(orient="records"),
+        "pie_onset": pieplot_onset.to_dict(orient="records"),
+        "lineplot": lineplot.to_dict(orient="records"),
+        "avg_lineplot": lineplot_avg.to_dict(orient="records"),
+        "table": table.to_dict(orient="records")
     }
     return outputs
 
