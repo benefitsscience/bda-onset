@@ -18,7 +18,6 @@ function PageOne(props) {
                   condition={props.condition}
                   setCondition={props.setCondition}
             />
-
             <div className="font-inter font-extralight text-gray-600 text-base mx-4 pt-4 text-justify">
                 {content["description"]}
             </div>

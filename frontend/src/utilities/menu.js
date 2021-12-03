@@ -22,17 +22,17 @@ function HorizontalMenu(props) {
     return(
         <div className="hidden ml:block">
             <div className="flex flex-shrink-0 place-content-center py-1.5">
+                <ConditionMenu
+                    condition={props.condition}
+                    setCondition={props.setCondition}
+                    conditionOptions={props.conditionOptions}
+                />
                 <ClientMenu
                     client={props.client}
                     setClient={props.setClient}
                     clientOptions={props.clientOptions}
                 />
                 {itemsLayout}
-                <ConditionMenu
-                    condition={props.condition}
-                    setCondition={props.setCondition}
-                    conditionOptions={props.conditionOptions}
-                />
                 </div>
             </div>
     )
@@ -50,14 +50,15 @@ function VerticalMenu(props) {
                 </button>
                 <Dropdown isClicked={isClicked} options={props.menuOptions} />
             </div>
-            <ClientMenu client={props.client}
-                        setClient={props.setClient}
-                        clientOptions={props.clientOptions}
-            />
             <ConditionMenu
-                    condition={props.condition}
-                    setCondition={props.setCondition}
-                    conditionOptions={props.conditionOptions}
+                condition={props.condition}
+                setCondition={props.setCondition}
+                conditionOptions={props.conditionOptions}
+            />
+            <ClientMenu
+                client={props.client}
+                setClient={props.setClient}
+                clientOptions={props.clientOptions}
             />
             <div className="invisible">
             </div>

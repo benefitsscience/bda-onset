@@ -3,11 +3,12 @@ import Header from "../../utilities/header";
 import Menu from "../../utilities/menu";
 import 'katex/dist/katex.min.css';
 import { BlockMath } from 'react-katex';
+import {content} from "./content";
 
 function PageThree(props) {
     return(
         <div>
-            <Header title={props.title} subtitle={props.subtitle} />
+            <Header title={content["title"]} subtitle={content["title"]} />
             <Menu client={props.client} setClient={props.setClient}/>
             <div className="font-inter font-extralight text-3xl text-gray-700 text-center my-4">
                 Why Momentum Really Works

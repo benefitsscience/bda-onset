@@ -1,6 +1,12 @@
 // Text for each element of page 2
 
-export const tableName = "Member's information"
+export const content = {
+    title: "Data",
 
-export const tableDescription = "Latest data set containing each member's information " +
+    subtitle: "The fuel to our models",
+
+    tableName: "Member's information",
+
+    description: "Latest data set containing each member's information " +
     "and corresponding probability of ONSET for spine surgery"
+}

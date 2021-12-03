@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../../utilities/header";
 import Menu from "../../utilities/menu";
 import Table from "../../technicals/table";
-import {tableName, tableDescription} from "./content";
+import {content} from "./content";
 
 const columns = [
   { field: 'id',
@@ -42,13 +42,18 @@ const columns = [
 function PageTwo(props) {
     return(
         <div>
-          <Header title={props.title} subtitle={props.subtitle} />
-          <Menu client={props.client} setClient={props.setClient}/>
+          <Header title={content["title"]} subtitle={content["subtitle"]} />
+          <Menu
+              client={props.client}
+              setClient={props.setClient}
+              condition={props.condition}
+              setCondition={props.setCondition}
+          />
           <div className="font-inter font-extralight text-3xl text-gray-700 text-center mt-4 mb-1">
-              {tableName}
+              {content["tableName"]}
           </div>
           <div className="font-inter font-extralight text-gray-600 text-base mx-16 text-justify">
-              {tableDescription}
+              {content["description"]}
           </div>
           <div className="flex justify-center mx-16 my-6">
             <Table rows={props.data} columns={columns} pageSize={5} />
