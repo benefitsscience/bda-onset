@@ -11,6 +11,14 @@ export const conditionNames = [
 ]
 
 
+export const menuOptions = [
+    "ONSET Insights",
+    "Data",
+    "Research",
+    "Contact"
+]
+
+
 export const popColors = [
     '#685268',
     '#FFA23A'

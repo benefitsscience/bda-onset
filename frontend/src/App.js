@@ -1,11 +1,10 @@
 import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-
-import {menuOptions, headerSubtitles} from "./pages/constants";
 import PageOne from "./pages/page_1/template";
 import PageTwo from "./pages/page_2/template";
 import PageThree from "./pages/page_3/template";
 import PageFour from "./pages/page_4/template";
+import {menuOptions} from "./pages/constants";
 import {clientNames, conditionNames} from "./pages/constants";
 
 
@@ -44,9 +43,7 @@ function BSTDashboard() {
                     </Route>
 
                     <Route exact path={"/".concat(menuOptions[1].toLowerCase())}>
-                        <PageTwo title={menuOptions[1]}
-                                 subtitle={headerSubtitles[1]}
-                                 client={client}
+                        <PageTwo client={client}
                                  setClient={setClient}
                                  condition={condition}
                                  setCondition={setCondition}
@@ -55,9 +52,7 @@ function BSTDashboard() {
                     </Route>
 
                     <Route exact path={"/".concat(menuOptions[2].toLowerCase())}>
-                        <PageThree title={menuOptions[2]}
-                                   subtitle={headerSubtitles[2]}
-                                   client={client}
+                        <PageThree client={client}
                                    setClient={setClient}
                                    condition={condition}
                                    setCondition={setCondition}
@@ -65,9 +60,7 @@ function BSTDashboard() {
                     </Route>
 
                     <Route exact path={"/".concat(menuOptions[3].toLowerCase())}>
-                        <PageFour title={menuOptions[3]}
-                                  subtitle={headerSubtitles[3]}
-                                  client={client}
+                        <PageFour client={client}
                                   setClient={setClient}
                                   condition={condition}
                                   setCondition={setCondition}

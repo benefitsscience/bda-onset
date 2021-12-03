@@ -9,7 +9,12 @@ function PageThree(props) {
     return(
         <div>
             <Header title={content["title"]} subtitle={content["title"]} />
-            <Menu client={props.client} setClient={props.setClient}/>
+            <Menu
+              client={props.client}
+              setClient={props.setClient}
+              condition={props.condition}
+              setCondition={props.setCondition}
+            />
             <div className="font-inter font-extralight text-3xl text-gray-700 text-center my-4">
                 Why Momentum Really Works
             </div>
