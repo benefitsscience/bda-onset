@@ -1,4 +1,4 @@
-import suggest_img from "../../public/feedback.jpg";
+import suggest_img from "../images/feedback.jpg";
 
 function FeedbackCard(){
     return(

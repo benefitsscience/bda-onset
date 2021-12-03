@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-BACKEND_DIR = os.path.abspath("../")
+BACKEND_DIR = os.path.abspath("")
 
 
 def process_data(client: str, condition: str):
@@ -27,12 +27,12 @@ def process_data(client: str, condition: str):
     print(f"---  Fetching data for client {client} with condition {condition}  ---")
 
     outputs = {
-        "barplot": pd.read_csv(os.path.join(condition_dir, "barplot.csv")).to_json(orient="records"),
-        "pie_pop": pd.read_csv(os.path.join(condition_dir, "pie_pop.csv")).to_json(orient="records"),
-        "pie_onset": pd.read_csv(os.path.join(condition_dir, "pie_onset.csv")).to_json(orient="records"),
-        "lineplot": pd.read_csv(os.path.join(condition_dir, "lineplot.csv")).to_json(orient="records"),
-        "avg_lineplot": pd.read_csv(os.path.join(condition_dir, "avg_lineplot.csv")).to_json(orient="records"),
-        "table": pd.read_csv(os.path.join(condition_dir, "pie_pop.csv")).to_json(orient="records")
+        "barplot": pd.read_csv(os.path.join(condition_dir, "barplot.csv")).to_dict(orient="records"),
+        "pie_pop": pd.read_csv(os.path.join(condition_dir, "pie_pop.csv")).to_dict(orient="records"),
+        "pie_onset": pd.read_csv(os.path.join(condition_dir, "pie_onset.csv")).to_dict(orient="records"),
+        "lineplot": pd.read_csv(os.path.join(condition_dir, "lineplot.csv")).to_dict(orient="records"),
+        "avg_lineplot": pd.read_csv(os.path.join(condition_dir, "avg_lineplot.csv")).to_dict(orient="records"),
+        "table": pd.read_csv(os.path.join(condition_dir, "table.csv")).to_dict(orient="records")
     }
     return outputs
 
