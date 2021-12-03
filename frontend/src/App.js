@@ -28,8 +28,6 @@ function BSTDashboard() {
         });
       }, [client, condition]);
 
-    console.log(data)
-
     if (data.isLoaded) {
         return (
             <Router>

@@ -1,7 +1,7 @@
 export const clientNames = [
     "Energy Transfer",
     "Thor Industries",
-    "LabCorp"
+    "Lab Corp"
 ]
 
 export const conditionNames = [

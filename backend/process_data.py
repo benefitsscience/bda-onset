@@ -38,4 +38,4 @@ def process_data(client: str, condition: str):
 
 
 if __name__ == '__main__':
-    process_data("Thorind", "spine")
+    process_data("Thor Industries", "spine")

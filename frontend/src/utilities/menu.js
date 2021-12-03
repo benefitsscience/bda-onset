@@ -95,7 +95,7 @@ function ConditionMenu(props){
                 <button className="focus:outline-none" onClick={() => setIsClicked(!isClicked)}>
                     <div className="flex flex-row items-center font-inter text-lg text-gray-900
                                     font-medium hover:font-bold pr-8">
-                        {props.client}&nbsp;
+                        {props.condition}&nbsp;
                         <div className="w-5 overflow-hidden">
                             <div className=" h-2 w-2 bg-black -rotate-45 transform origin-top-left"></div>
                         </div>
