@@ -45,7 +45,8 @@ function PiePlot(props){
         <Legend />
           <Pie
               data={props.data}
-              dataKey="value"
+              dataKey="Population"
+              nameKey="Class"
               cx="50%"
               cy="50%"
               outerRadius={"60%"}

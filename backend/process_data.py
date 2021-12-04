@@ -43,7 +43,8 @@ def process_data(client: str, condition: str):
     # This is necessary because json response on the `frontend` automatically sorts keys of each dataframe
     # We want plots to have matching colors, so we sort each dataframe accordingly
     idxs = [np.where(columns == i)[0][0] for i in pieplot_onset["Class"]]
-    pieplot_onset = pieplot_onset.loc[idxs, :].reset_index(drop=True)
+    pieplot_onset.index = idxs
+    pieplot_onset.sort_index(inplace=True)
 
     outputs = {
         "barplot": barplot.to_dict(orient="records"),

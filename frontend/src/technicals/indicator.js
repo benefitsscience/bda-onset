@@ -1,14 +1,13 @@
 import React from "react";
-import {content} from "../pages/page_1/content";
 
 function Indicator(props) {
     let value;
     if (
-        props.data.length && props.name === content["indicators"][0]["name"]
-    ){value = props.data[0]["value"] + props.data[1]["value"]}
+        props.data.length && props.name === "Total Population"
+    ){value = props.data[0]["Population"] + props.data[1]["Population"]}
     else if (
-        props.data.length && props.name === content["indicators"][1]["name"])
-    {value = props.data[1]["value"]}
+        props.data.length && props.name === "Population At-Risk")
+    {value = props.data[1]["Population"]}
     else {value = 0}
 
     return(
