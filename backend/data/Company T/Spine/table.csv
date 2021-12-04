@@ -1,100 +1,151 @@
-id,age,gender,relation,plan,leafid
-47678871,19,M,C,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47698660,54,F,S,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47708020,11,F,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47706191,12,M,C,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47702993,11,F,C,AIRSTREAM PLAN 33 ,model-spine-201901-20210419-v001/3
-47679707,10,M,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47691743,56,F,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47716324,15,M,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47696131,41,F,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47697125,35,M,S,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47697980,31,M,E,KEYSTONE PLAN 44,model-spine-201901-20210419-v001/3
-47701473,47,M,E,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/7
-47701504,56,M,E,KEYSTONE PLAN 44,model-spine-201901-20210419-v001/3
-47702389,44,M,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47702565,52,M,E,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47705762,20,M,C,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-47703309,24,F,C,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-47711802,5,F,C,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47705293,56,F,E,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47717020,39,F,S,JAYCO PLAN 47,model-spine-201901-20210419-v001/3
-47706464,45,F,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47706782,24,M,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47707129,57,F,E,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-47707389,28,F,S,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-47707705,51,M,E,THOR MOTOR COACH PLAN 49,model-spine-201901-20210419-v001/3
-47687297,12,M,C,HEARTLAND RV PLAN 46,model-spine-201901-20210419-v001/7
-47716360,19,M,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47700164,21,F,C,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47709442,29,M,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47715981,6,M,C,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-47723113,8,F,C,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47715766,21,F,C,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/13
-47710854,63,M,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47712813,39,F,S,HEARTLAND RV PLAN 45,model-spine-201901-20210419-v001/7
-47727390,18,M,C,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47694871,24,M,C,KEYSTONE PLAN 44,model-spine-201901-20210419-v001/3
-47694669,15,F,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47713693,33,F,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/13
-47713843,32,M,E,KEYSTONE PLAN 44,model-spine-201901-20210419-v001/3
-47714438,62,F,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47714758,29,M,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47714801,52,F,E,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/7
-47713513,48,F,S,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47701587,2,F,C,AIRSTREAM PLAN 33 ,model-spine-201901-20210419-v001/3
-47735790,17,M,C,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-47717220,38,M,E,JAYCO PLAN 35,model-spine-201901-20210419-v001/15
-47717266,46,M,E,THOR MOTOR COACH PLAN 49,model-spine-201901-20210419-v001/3
-47717522,62,M,E,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47704997,42,F,S,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/14
-47696327,20,F,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47719844,59,F,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47721372,5,M,C,THOR MOTOR COACH PLAN 49,model-spine-201901-20210419-v001/3
-47720600,39,M,E,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-47720750,63,M,E,JAYCO PLAN 47,model-spine-201901-20210419-v001/3
-47701787,6,M,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47722457,24,M,E,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/7
-47698164,15,F,C,HEARTLAND RV PLAN 46,model-spine-201901-20210419-v001/3
-47728368,10,M,C,JAYCO PLAN 47,model-spine-201901-20210419-v001/3
-47704053,16,M,C,HEARTLAND RV PLAN 46,model-spine-201901-20210419-v001/3
-47719554,5,M,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47722918,48,M,E,HEARTLAND RV PLAN 45,model-spine-201901-20210419-v001/3
-47735022,3,M,C,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-47700024,32,F,S,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-47727976,25,F,E,KEYSTONE PLAN 44,model-spine-201901-20210419-v001/3
-47727993,44,M,E,KEYSTONE PLAN 44,model-spine-201901-20210419-v001/3
-47743234,17,F,C,AIRSTREAM PLAN 33 ,model-spine-201901-20210419-v001/13
-47730392,32,M,E,JAYCO PLAN 47,model-spine-201901-20210419-v001/3
-47695784,18,F,C,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-47706707,5,M,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47731706,34,M,E,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47696852,13,F,C,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-47730888,3,M,C,JAYCO PLAN 47,model-spine-201901-20210419-v001/3
-47716385,60,F,S,THOR MOTOR COACH PLAN 49,model-spine-201901-20210419-v001/3
-47698937,63,F,S,JAYCO PLAN 47,model-spine-201901-20210419-v001/3
-47717087,8,M,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47713235,3,M,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47683231,37,F,S,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47714705,34,F,S,JAYCO PLAN 47,model-spine-201901-20210419-v001/3
-47733072,28,M,S,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47734548,7,F,C,KEYSTONE PLAN 44,model-spine-201901-20210419-v001/3
-47741210,37,M,E,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/7
-47731096,22,M,C,JAYCO PLAN 47,model-spine-201901-20210419-v001/3
-48608697,4,F,C,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47727162,32,F,S,AIRSTREAM PLAN 33 ,model-spine-201901-20210419-v001/3
-48599599,15,F,C,AIRSTREAM PLAN 50,model-spine-201901-20210419-v001/3
-48617136,25,M,E,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-48628258,52,F,E,THOR MOTOR COACH PLAN 49,model-spine-201901-20210419-v001/3
-48952720,47,M,E,THOR MOTOR COACH PLAN 49,model-spine-201901-20210419-v001/3
-47739674,1,F,C,KEYSTONE PLAN 36,model-spine-201901-20210419-v001/3
-47725108,1,M,C,HEARTLAND RV PLAN 46,model-spine-201901-20210419-v001/3
-47727134,15,F,C,HEARTLAND RV PLAN 45,model-spine-201901-20210419-v001/3
-74066576,30,M,E,KEYSTONE PLAN 44,model-spine-201901-20210419-v001/3
-74065081,30,F,S,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-74234126,20,M,E,KEYSTONE PLAN 44,model-spine-201901-20210419-v001/3
-74360561,22,F,E,JAYCO PLAN 35,model-spine-201901-20210419-v001/3
-74361528,33,M,E,JAYCO PLAN 47,model-spine-201901-20210419-v001/3
-74503025,29,F,S,KEYSTONE PLAN 31,model-spine-201901-20210419-v001/3
-47689431,33,F,S,JAYCO PLAN 35,model-spine-201901-20210419-v001/7
-74350615,4,F,C,AIRSTREAM PLAN 33 ,model-spine-201901-20210419-v001/3
+47677303,61,M,employee,1.88%,"High cost dorsopathies, high total cost in the last few months"
+47677311,53,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47677575,41,F,spouse,2.48%,"Medium cost dorsopathies, high Rx cost"
+47677619,51,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678047,14,M,child,0.53%,Medium cost dorsopathies
+47678171,41,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678299,48,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678403,17,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47678403,19,F,child,0.53%,Medium cost dorsopathies
+47678431,65,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678443,63,F,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678447,60,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678463,22,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678491,71,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678491,68,F,spouse,2.48%,"Medium cost dorsopathies, high Rx cost"
+47678779,18,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47678779,40,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678779,43,F,spouse,2.48%,"Medium cost dorsopathies, high Rx cost"
+47678819,61,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678819,57,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47678847,23,F,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678851,51,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678855,25,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47678871,50,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47678871,20,F,child,0.53%,Medium cost dorsopathies
+47678935,27,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47679063,56,M,employee,7.10%,Spondylopathies
+47679083,56,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47679103,42,M,employee,7.10%,Spondylopathies
+47679327,62,F,employee,1.13%,"Medium cost dorsopathies, other disorders of the nervous system"
+47679875,30,F,spouse,2.48%,"Medium cost dorsopathies, high Rx cost"
+47679907,42,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47679907,22,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47679919,16,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47679919,3,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47679919,36,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47679919,16,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47679919,10,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47679919,5,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47679955,24,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47679955,51,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47679955,20,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47679963,55,F,employee,0.11%,"No spondylopathies, no dorsopathies"
+47679995,53,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680003,37,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680003,11,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47680047,51,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680067,35,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680067,8,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47680067,14,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47680067,33,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47680075,35,F,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680103,19,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47680103,48,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680103,25,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47680155,17,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47680155,25,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47680155,48,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680155,21,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47680155,20,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47680155,21,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47680171,54,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680191,61,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680203,67,F,spouse,1.13%,"Medium cost dorsopathies, other disorders of the nervous system"
+47680231,26,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47680231,27,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680231,0,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47680259,48,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47680259,41,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680259,25,M,child,1.13%,"Medium cost dorsopathies, other disorders of the nervous system"
+47680263,4,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47680263,41,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47680283,16,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47680283,47,M,employee,1.88%,"High cost dorsopathies, high total cost in the last few months"
+47682695,42,M,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47682703,8,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47682703,12,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47682811,63,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47682811,33,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47682843,3,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47682843,31,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47682859,34,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47682859,11,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47682859,13,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47682859,9,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47682859,34,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47682863,7,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47682863,31,F,spouse,0.53%,Medium cost dorsopathies
+47682899,30,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47682935,5,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47682935,28,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47682935,30,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47682963,23,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47682963,59,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47682963,21,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47682975,65,F,employee,3.74%,High cost dorsopathies and disc disorders
+47683859,38,M,employee,7.10%,Spondylopathies
+47683879,20,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47683879,15,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47683919,10,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47683919,37,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47683919,11,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47683919,7,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47683927,39,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47683927,12,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47683927,9,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47683947,49,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47683991,26,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47683995,24,F,employee,0.11%,"No spondylopathies, no dorsopathies"
+47684043,20,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47684043,14,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47684043,23,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47684063,51,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47684139,55,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47684155,62,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47684167,26,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47684523,43,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47684675,39,F,employee,1.13%,"Medium cost dorsopathies, other disorders of the nervous system"
+47685319,68,F,spouse,7.10%,Spondylopathies
+47685795,41,M,employee,7.10%,Spondylopathies
+47685883,33,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47685883,33,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47685911,59,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47685947,18,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47685947,23,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47685947,47,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47685947,21,F,child,0.53%,Medium cost dorsopathies
+47685947,49,M,employee,1.13%,"Medium cost dorsopathies, other disorders of the nervous system"
+47686083,63,M,employee,1.88%,"High cost dorsopathies, high total cost in the last few months"
+47686847,51,M,spouse,7.10%,Spondylopathies
+47686855,45,F,employee,0.11%,"No spondylopathies, no dorsopathies"
+47686855,17,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47686855,19,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47686855,22,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47686903,54,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47686903,18,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47686943,9,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47686943,14,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47686943,4,F,child,0.11%,"No spondylopathies, no dorsopathies"
+47686943,39,M,employee,0.53%,Medium cost dorsopathies
+47686963,60,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47686963,59,F,spouse,0.53%,Medium cost dorsopathies
+47686971,5,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47686971,27,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47686971,3,M,child,0.11%,"No spondylopathies, no dorsopathies"
+47686971,25,F,spouse,0.11%,"No spondylopathies, no dorsopathies"
+47687203,40,F,employee,3.74%,High cost dorsopathies and disc disorders
+47687213,28,M,employee,0.11%,"No spondylopathies, no dorsopathies"
+47687289,52,F,spouse,7.10%,Spondylopathies
+47689065,52,M,employee,1.88%,"High cost dorsopathies, high total cost in the last few months"
+47689157,50,M,employee,1.13%,"Medium cost dorsopathies, other disorders of the nervous system"
