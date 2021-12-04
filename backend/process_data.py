@@ -1,5 +1,4 @@
 import os
-
 import numpy as np
 import pandas as pd
 
@@ -28,11 +27,11 @@ def process_data(client: str, condition: str):
 
     print(f"---  Fetching data for client {client} with condition {condition}  ---")
 
-    barplot = pd.read_csv(os.path.join(condition_dir, "barplot.csv"))
-    lineplot = pd.read_csv(os.path.join(condition_dir, "lineplot.csv"))
+    barplot = pd.read_csv(os.path.join(condition_dir, "overtime.csv"))
+    lineplot = pd.read_csv(os.path.join(condition_dir, "relative_diff.csv"))
     pieplot_pop = pd.read_csv(os.path.join(condition_dir, "pie_pop.csv"))
     pieplot_onset = pd.read_csv(os.path.join(condition_dir, "pie_onset.csv"))
-    lineplot_avg = pd.read_csv(os.path.join(condition_dir, "avg_lineplot.csv"))
+    lineplot_avg = pd.read_csv(os.path.join(condition_dir, "overall_average.csv"))
     table = pd.read_csv(os.path.join(condition_dir, "table.csv"))
 
     # Sort columns (string dtype)

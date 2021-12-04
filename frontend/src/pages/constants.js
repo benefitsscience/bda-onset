@@ -1,7 +1,7 @@
 export const clientNames = [
-    "Energy Transfer",
-    "Thor Industries",
-    "Lab Corp"
+    "Company E",
+    "Company L",
+    "Company T"
 ]
 
 

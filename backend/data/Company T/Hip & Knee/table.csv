@@ -1,0 +1,150 @@
+Employee ID,Age,Gender,Relation,Probability,Reason
+47704997,42,F,spouse,11.70%,Hip Osteoarthritis
+47716385,60,F,spouse,8.38%,Knee Osteoarthritis
+47746958,21,M,employee,0.73%,Injuries to hip and/or thigh
+48607973,24,M,employee,0.29%,No previous hip or knee conditions
+47696661,37,F,spouse,0.29%,No previous hip or knee conditions
+48608385,44,M,employee,6.82%,Dislocation and sprain of joints and ligaments of knee
+75141092,53,F,spouse,0.29%,No previous hip or knee conditions
+75170821,15,F,child,6.82%,Dislocation and sprain of joints and ligaments of knee
+75379048,48,M,spouse,0.29%,No previous hip or knee conditions
+75379584,32,M,employee,6.82%,Dislocation and sprain of joints and ligaments of knee
+47715766,19,M,child,0.29%,No previous hip or knee conditions
+75247729,37,M,spouse,4.57%,"Injuries to hip and/or thigh, other joint disorders"
+47704273,27,F,employee,0.29%,No previous hip or knee conditions
+47705746,42,M,employee,0.29%,No previous hip or knee conditions
+47706398,41,M,employee,0.29%,No previous hip or knee conditions
+47713189,55,M,employee,11.70%,Hip Osteoarthritis
+47716426,65,M,employee,8.38%,Knee Osteoarthritis
+47726954,56,M,employee,11.70%,Hip Osteoarthritis
+47697437,64,M,spouse,0.73%,Injuries to hip and/or thigh
+60776313,56,M,employee,11.70%,Hip Osteoarthritis
+47708358,49,F,spouse,8.38%,Knee Osteoarthritis
+47728534,51,F,spouse,6.82%,Dislocation and sprain of joints and ligaments of knee
+47729446,36,M,employee,0.29%,No previous hip or knee conditions
+47713808,7,F,child,0.29%,No previous hip or knee conditions
+47732082,36,F,employee,11.70%,Hip Osteoarthritis
+47701537,17,M,child,0.29%,No previous hip or knee conditions
+47696131,25,F,child,6.82%,Dislocation and sprain of joints and ligaments of knee
+47694697,42,M,employee,0.29%,No previous hip or knee conditions
+47696049,20,M,child,0.29%,No previous hip or knee conditions
+47711921,52,F,spouse,8.38%,Knee Osteoarthritis
+47717855,13,F,child,4.57%,"Injuries to hip and/or thigh, other joint disorders"
+47703448,12,M,child,0.73%,Injuries to hip and/or thigh
+47698632,61,M,employee,8.38%,Knee Osteoarthritis
+47710426,58,M,employee,11.70%,Hip Osteoarthritis
+47698067,47,M,employee,8.38%,Knee Osteoarthritis
+47678047,15,M,child,0.29%,No previous hip or knee conditions
+47685871,3,F,child,0.29%,No previous hip or knee conditions
+47703172,61,M,employee,0.29%,No previous hip or knee conditions
+47721046,60,F,spouse,6.82%,Dislocation and sprain of joints and ligaments of knee
+47691405,10,M,child,0.29%,No previous hip or knee conditions
+47716017,44,F,spouse,8.38%,Knee Osteoarthritis
+47720802,52,M,employee,0.29%,No previous hip or knee conditions
+47721018,30,M,employee,0.29%,No previous hip or knee conditions
+74281593,36,F,spouse,5.26%,Internal derangement of knee
+47681675,62,F,employee,0.73%,Injuries to hip and/or thigh
+47689025,57,F,employee,8.38%,Knee Osteoarthritis
+47699428,63,M,employee,11.70%,Hip Osteoarthritis
+47714038,54,M,employee,11.70%,Hip Osteoarthritis
+47702349,49,M,employee,8.38%,Knee Osteoarthritis
+47703529,61,F,employee,0.29%,No previous hip or knee conditions
+47717014,56,M,employee,8.38%,Knee Osteoarthritis
+47724157,64,F,spouse,11.70%,Hip Osteoarthritis
+47719393,2,M,child,0.29%,No previous hip or knee conditions
+47733570,49,F,employee,8.38%,Knee Osteoarthritis
+47688361,3,F,child,0.29%,No previous hip or knee conditions
+47718270,15,F,child,0.29%,No previous hip or knee conditions
+47692385,57,M,employee,8.38%,Knee Osteoarthritis
+47687937,60,M,employee,11.70%,Hip Osteoarthritis
+47702227,16,F,child,0.29%,No previous hip or knee conditions
+47689867,63,M,employee,0.29%,No previous hip or knee conditions
+47690867,53,M,employee,0.29%,No previous hip or knee conditions
+47691405,34,M,employee,0.29%,No previous hip or knee conditions
+47691421,37,F,employee,0.29%,No previous hip or knee conditions
+47691561,39,M,employee,0.29%,No previous hip or knee conditions
+47696547,30,F,spouse,0.29%,No previous hip or knee conditions
+47694285,30,M,employee,0.29%,No previous hip or knee conditions
+47701852,7,M,child,0.29%,No previous hip or knee conditions
+47694635,25,F,child,0.29%,No previous hip or knee conditions
+47695632,63,F,spouse,0.29%,No previous hip or knee conditions
+47695235,26,M,employee,0.29%,No previous hip or knee conditions
+47695397,51,M,employee,0.29%,No previous hip or knee conditions
+47719332,26,F,spouse,0.29%,No previous hip or knee conditions
+47733342,29,F,spouse,0.29%,No previous hip or knee conditions
+47713710,23,F,child,0.29%,No previous hip or knee conditions
+47698637,42,F,employee,0.29%,No previous hip or knee conditions
+47698837,32,M,employee,0.29%,No previous hip or knee conditions
+47697980,9,F,child,0.29%,No previous hip or knee conditions
+47700032,43,M,employee,0.29%,No previous hip or knee conditions
+47690461,34,F,spouse,0.29%,No previous hip or knee conditions
+47712469,62,F,spouse,0.29%,No previous hip or knee conditions
+47715553,31,M,spouse,0.29%,No previous hip or knee conditions
+47701735,62,M,employee,0.29%,No previous hip or knee conditions
+47700441,24,F,child,0.29%,No previous hip or knee conditions
+47701152,7,F,child,0.29%,No previous hip or knee conditions
+47703309,53,M,employee,0.29%,No previous hip or knee conditions
+47734458,20,F,child,0.29%,No previous hip or knee conditions
+47706671,12,F,child,0.29%,No previous hip or knee conditions
+47704436,38,M,employee,0.29%,No previous hip or knee conditions
+47704868,68,M,employee,0.29%,No previous hip or knee conditions
+47716386,31,F,spouse,0.29%,No previous hip or knee conditions
+47707798,57,M,employee,0.29%,No previous hip or knee conditions
+47708624,36,M,employee,0.29%,No previous hip or knee conditions
+47711361,14,M,child,0.29%,No previous hip or knee conditions
+47708815,24,M,employee,0.29%,No previous hip or knee conditions
+47743582,21,F,child,0.29%,No previous hip or knee conditions
+47709722,50,M,employee,0.29%,No previous hip or knee conditions
+47704709,3,F,child,0.29%,No previous hip or knee conditions
+47736706,18,M,child,0.29%,No previous hip or knee conditions
+47689115,29,F,spouse,0.29%,No previous hip or knee conditions
+47711493,46,M,employee,0.29%,No previous hip or knee conditions
+47723468,59,F,spouse,0.29%,No previous hip or knee conditions
+47691865,22,F,child,0.29%,No previous hip or knee conditions
+47723286,9,M,child,0.29%,No previous hip or knee conditions
+47705363,24,M,child,0.29%,No previous hip or knee conditions
+47727126,36,F,spouse,0.29%,No previous hip or knee conditions
+47714988,30,F,employee,0.29%,No previous hip or knee conditions
+47705684,43,F,spouse,0.29%,No previous hip or knee conditions
+47715877,38,M,employee,0.29%,No previous hip or knee conditions
+47715900,30,F,employee,0.29%,No previous hip or knee conditions
+47716571,29,M,employee,0.29%,No previous hip or knee conditions
+47734002,11,F,child,0.29%,No previous hip or knee conditions
+47718526,67,M,employee,0.29%,No previous hip or knee conditions
+47725705,13,M,child,0.29%,No previous hip or knee conditions
+47730702,24,F,child,0.29%,No previous hip or knee conditions
+47714858,33,F,spouse,0.29%,No previous hip or knee conditions
+47714951,13,F,child,0.29%,No previous hip or knee conditions
+47717220,20,M,child,0.73%,Injuries to hip and/or thigh
+47719678,33,F,employee,0.29%,No previous hip or knee conditions
+47711273,10,F,child,0.29%,No previous hip or knee conditions
+47721178,76,M,employee,0.29%,No previous hip or knee conditions
+47701897,13,F,child,0.29%,No previous hip or knee conditions
+47722270,54,M,employee,0.29%,No previous hip or knee conditions
+47740706,8,M,child,0.29%,No previous hip or knee conditions
+47723404,60,M,employee,0.29%,No previous hip or knee conditions
+47727390,48,F,spouse,0.29%,No previous hip or knee conditions
+47703911,15,M,child,0.29%,No previous hip or knee conditions
+47724188,32,M,employee,0.29%,No previous hip or knee conditions
+47724546,48,M,employee,0.29%,No previous hip or knee conditions
+47700852,6,M,child,0.29%,No previous hip or knee conditions
+47729002,63,M,employee,0.29%,No previous hip or knee conditions
+47708263,10,M,child,0.29%,No previous hip or knee conditions
+47730864,26,F,employee,0.29%,No previous hip or knee conditions
+47732982,51,M,employee,0.29%,No previous hip or knee conditions
+47715846,12,F,child,0.29%,No previous hip or knee conditions
+47695645,21,M,child,0.29%,No previous hip or knee conditions
+47741850,30,M,employee,0.29%,No previous hip or knee conditions
+47743018,32,F,employee,0.29%,No previous hip or knee conditions
+48608685,2,M,child,0.29%,No previous hip or knee conditions
+47718371,16,M,child,0.29%,No previous hip or knee conditions
+47710473,21,F,child,0.29%,No previous hip or knee conditions
+60771887,33,M,employee,0.29%,No previous hip or knee conditions
+73912538,28,M,employee,0.29%,No previous hip or knee conditions
+48600359,28,F,spouse,0.29%,No previous hip or knee conditions
+74221184,28,M,employee,0.29%,No previous hip or knee conditions
+74296310,11,M,child,0.29%,No previous hip or knee conditions
+74296094,39,M,employee,0.29%,No previous hip or knee conditions
+74350543,33,M,employee,0.29%,No previous hip or knee conditions
+74502945,6,M,child,0.29%,No previous hip or knee conditions
+75157914,44,M,employee,0.29%,No previous hip or knee conditions
