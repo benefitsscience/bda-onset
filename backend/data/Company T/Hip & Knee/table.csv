@@ -1,4 +1,4 @@
-Employee ID,Age,Gender,Relation,Probability,Reason
+id,Age,Gender,Relation,Probability,Reason
 47704997,42,F,spouse,11.70%,Hip Osteoarthritis
 47716385,60,F,spouse,8.38%,Knee Osteoarthritis
 47746958,21,M,employee,0.73%,Injuries to hip and/or thigh

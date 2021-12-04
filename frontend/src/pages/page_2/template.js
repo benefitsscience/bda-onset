@@ -9,32 +9,32 @@ const columns = [
     headerName: 'Employee ID',
     width: 170 },
   {
-    field: 'age',
+    field: 'Age',
     headerName: 'Age',
     type: 'number',
     width: 120,
   },
   {
-    field: 'gender',
+    field: 'Gender',
     headerName: 'Gender',
     width: 140,
   },
   {
-    field: 'relation',
+    field: 'Relation',
     headerName: 'Relation',
+    width: 170,
+  },
+  {
+    field: 'Probability',
+    headerName: 'Probability',
     width: 140,
   },
   {
-    field: 'plan',
-    headerName: 'Plan',
-    width: 150,
-  },
-  {
-    field: 'leafid',
-    headerName: 'Leaf ID',
-    description: 'Add description.',
+    field: 'Reason',
+    headerName: 'Reason',
+    description: '',
     sortable: false,
-    width: 300,
+    width: 350,
   }
 ];
 

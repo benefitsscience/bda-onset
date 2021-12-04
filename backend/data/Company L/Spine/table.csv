@@ -1,4 +1,4 @@
-Employee ID,Age,Gender,Relation,Probability,Reason
+id,Age,Gender,Relation,Probability,Reason
 520288386,43,M,employee,0.11%,"No spondylopathies, no dorsopathies"
 520289123,56,M,employee,0.11%,"No spondylopathies, no dorsopathies"
 520329758,20,F,child,0.53%,Medium cost dorsopathies

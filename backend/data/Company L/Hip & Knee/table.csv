@@ -1,4 +1,4 @@
-Employee ID,Age,Gender,Relation,Probability,Reason
+id,Age,Gender,Relation,Probability,Reason
 520290957,50,M,employee,5.26%,Internal derangement of knee
 520290980,63,M,employee,0.29%,No previous hip or knee conditions
 520293231,60,F,employee,11.70%,Hip Osteoarthritis

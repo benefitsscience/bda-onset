@@ -42,7 +42,7 @@ def process_data(client: str, condition: str):
     # Sort Pie data so that each row has `name` in the same order as `columns`
     # This is necessary because json response on the `frontend` automatically sorts keys of each dataframe
     # We want plots to have matching colors, so we sort each dataframe accordingly
-    idxs = [np.where(columns == i)[0][0] for i in pieplot_onset["name"]]
+    idxs = [np.where(columns == i)[0][0] for i in pieplot_onset["Class"]]
     pieplot_onset = pieplot_onset.loc[idxs, :].reset_index(drop=True)
 
     outputs = {

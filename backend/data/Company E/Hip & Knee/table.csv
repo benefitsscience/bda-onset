@@ -1,4 +1,4 @@
-Employee ID,Age,Gender,Relation,Probability,Reason
+id,Age,Gender,Relation,Probability,Reason
 17729283,49,M,employee,0.29%,No previous hip or knee conditions
 17774383,51,F,spouse,8.38%,Knee Osteoarthritis
 17764723,61,M,employee,0.29%,No previous hip or knee conditions

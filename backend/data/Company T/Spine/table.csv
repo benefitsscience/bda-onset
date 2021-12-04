@@ -1,3 +1,4 @@
+id,Age,Gender,Relation,Probability,Reason
 47677303,61,M,employee,1.88%,"High cost dorsopathies, high total cost in the last few months"
 47677311,53,M,employee,0.11%,"No spondylopathies, no dorsopathies"
 47677575,41,F,spouse,2.48%,"Medium cost dorsopathies, high Rx cost"
