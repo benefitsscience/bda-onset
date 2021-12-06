@@ -14,7 +14,7 @@ const CustomTooltip = ({ active, payload, explanation, symbol}) => {
   if (active) {
     return (
       <div className="font-inter bg-gray-200 bg-opacity-80 rounded-md shadow-md text-justify w-auto p-2">
-        <p>{`${payload[0].name} : ${Math.round(payload[0].value)}${symbol}`}</p>
+        <p>{`${payload[0].name} : ${symbol}${Math.round(payload[0].value).toLocaleString()}`}</p>
         <p className="font-extralight">{getExplanation(explanation, payload[0].name)}</p>
       </div>
     );
@@ -71,7 +71,7 @@ function PiePlot(props){
                           textAnchor={x > cx ? "start" : "end"}
                           dominantBaseline="central"
                         >
-                          {Math.round(value)}{props.symbol}
+                          {props.symbol}{Math.round(value)}
                         </text>
                       );}
                       else {
@@ -83,7 +83,7 @@ function PiePlot(props){
                           textAnchor={x > cx ? "start" : "end"}
                           dominantBaseline="central"
                         >
-                          {Math.round(value).toLocaleString()}{props.symbol}
+                          {props.symbol}{Math.round(value).toLocaleString()}
                         </text>
                       );
                       }

@@ -49,6 +49,8 @@ function PageOne(props) {
                             explanation={props.explanation}
                             colors={popColors}
                             title={"Total Population"}
+                            symbol={symbol}
+                            showCost={showCost}
                         />}
                         plot2={<PiePlot
                             data={props.data["pie_onset"]}

@@ -10,7 +10,7 @@ function Indicator(props) {
     {value = props.data[1]["Population"]}
     else if (
         props.data.length && props.name === "Expected Cost")
-    {value = "$" + props.data[0]["Estimated Cost"].toLocaleString()}
+    {value = "$" + (props.data[0]["Estimated Cost"] + props.data[1]["Estimated Cost"]).toLocaleString()}
     else {value = 0}
 
     return(
