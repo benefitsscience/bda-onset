@@ -37,12 +37,14 @@ function PageOne(props) {
                         title={content["boxTitles"][2]}
                         plot1={<PiePlot
                             data={props.data["pie_pop"]}
+                            explanation={props.explanation}
                             colors={popColors}
                             title={"Total Population"}
                             symbol={''}
                         />}
                         plot2={<PiePlot
                             data={props.data["pie_onset"]}
+                            explanation={props.explanation}
                             colors={onsetColors}
                             title={"Onset Breakdown"}
                             symbol={""}

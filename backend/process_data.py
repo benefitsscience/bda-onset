@@ -27,12 +27,16 @@ def process_data(client: str, condition: str):
 
     print(f"---  Fetching data for client {client} with condition {condition}  ---")
 
+    # Data
     barplot = pd.read_csv(os.path.join(condition_dir, "overtime.csv"))
     lineplot = pd.read_csv(os.path.join(condition_dir, "relative_diff.csv"))
     pieplot_pop = pd.read_csv(os.path.join(condition_dir, "pie_pop.csv"))
     pieplot_onset = pd.read_csv(os.path.join(condition_dir, "pie_onset.csv"))
     lineplot_avg = pd.read_csv(os.path.join(condition_dir, "overall_average.csv"))
     table = pd.read_csv(os.path.join(condition_dir, "table.csv"))
+
+    # Explanations
+    explanation = pd.read_csv(os.path.join(BACKEND_DIR, f"data/Explanation/{condition}.csv"))
 
     # Sort columns (string dtype)
     columns = barplot.columns.sort_values()
@@ -47,15 +51,18 @@ def process_data(client: str, condition: str):
     pieplot_onset.sort_index(inplace=True)
 
     outputs = {
-        "barplot": barplot.to_dict(orient="records"),
-        "pie_pop": pieplot_pop.to_dict(orient="records"),
-        "pie_onset": pieplot_onset.to_dict(orient="records"),
-        "lineplot": lineplot.to_dict(orient="records"),
-        "avg_lineplot": lineplot_avg.to_dict(orient="records"),
-        "table": table.to_dict(orient="records")
+        "data": {
+            "barplot": barplot.to_dict(orient="records"),
+            "pie_pop": pieplot_pop.to_dict(orient="records"),
+            "pie_onset": pieplot_onset.to_dict(orient="records"),
+            "lineplot": lineplot.to_dict(orient="records"),
+            "avg_lineplot": lineplot_avg.to_dict(orient="records"),
+            "table": table.to_dict(orient="records")
+        },
+        "explanation": explanation.to_dict(orient="records")
     }
     return outputs
 
 
 if __name__ == '__main__':
-    process_data("Thor Industries", "spine")
+    process_data("Company T", "Spine")

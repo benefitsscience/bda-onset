@@ -1,28 +1,21 @@
 import React from 'react';
 import {PieChart, Pie, Tooltip, Cell, Legend, ResponsiveContainer} from 'recharts';
 
-const getIntroOfPage = (label) => {
-  if (label === '7-8%') {
-    return "Spondylopathies";
-  }
-  if (label === '2-4%') {
-    return "Dorsopathies with Disk Disorders and/or High Rx cost";
-  }
-  if (label === '1-2%') {
-    return "Dorsopathies with High cost claims or Disorders of the Nervous System";
-  }
-  if (label === '0.4-0.6%') {
-    return 'Dorsopathies without complications';
-  }
-    return '';
-};
 
-const CustomTooltip = ({ active, payload, symbol}) => {
+const getExplanation = (explanation, label) => {
+    for (const [, value] of Object.entries(explanation)) {
+        console.log(value)
+        if (value["Probability"] === label){return value["Reason"]}
+    }
+}
+
+
+const CustomTooltip = ({ active, payload, explanation, symbol}) => {
   if (active) {
     return (
       <div className="font-inter bg-gray-200 bg-opacity-80 rounded-md shadow-md text-justify w-auto p-2">
         <p>{`${payload[0].name} : ${Math.round(payload[0].value)}${symbol}`}</p>
-        <p className="font-extralight">{getIntroOfPage(payload[0].name)}</p>
+        <p className="font-extralight">{getExplanation(explanation, payload[0].name)}</p>
       </div>
     );
   }
@@ -41,7 +34,7 @@ function PiePlot(props){
               className="font-inter text-gray-800">
             {props.title}
         </text>
-        <Tooltip content={<CustomTooltip symbol={props.symbol}/>} />
+        <Tooltip content={<CustomTooltip symbol={props.symbol} explanation={props.explanation}/>} />
         <Legend />
           <Pie
               data={props.data}

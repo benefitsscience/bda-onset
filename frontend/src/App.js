@@ -12,7 +12,7 @@ function BSTDashboard() {
     // Initialize constants
     const [client, setClient] = React.useState(clientNames[0])
     const [condition, setCondition] = React.useState(conditionNames[0])
-    const [data, setData] = React.useState({data:[], isLoaded: false})
+    const [data, setData] = React.useState({data:[], explanation: [], isLoaded: false})
 
     // Fetch data
       useEffect(() => {
@@ -23,7 +23,7 @@ function BSTDashboard() {
             };
         fetch('/data', requestOptions)
             .then(res => res.json()).then(data => {
-          setData({data: data, isLoaded: true});
+          setData({data: data.data, explanation: data.explanation, isLoaded: true});
         });
       }, [client, condition]);
 
@@ -39,6 +39,7 @@ function BSTDashboard() {
                                  condition={condition}
                                  setCondition={setCondition}
                                  data={data.data}
+                                 explanation={data.explanation}
                         />
                     </Route>
 
