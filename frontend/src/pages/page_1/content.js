@@ -72,7 +72,7 @@ export const content = {
             "discussion": "Based on latest probabilities: AUGUST 2021"},
             {"intro": "General probability of a person requiring hip & knee surgery in the next 12 months ",
             "discussion": "Note: in overall population of BST data set, the probability of a person requiring" +
-                " hip % knee surgery in the next 12 months is 0.47% "}
+                " hip & knee surgery in the next 12 months is 0.47% "}
         ]
 
     }
