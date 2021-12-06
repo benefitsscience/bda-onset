@@ -15,7 +15,8 @@ export const content = {
 
         indicators: [
             {"name": "Total Population", "tooltip": "Number of registered members"},
-            {"name": "Population At-Risk", "tooltip": "Number of members at risk of spine surgery"}
+            {"name": "Population At-Risk", "tooltip": "Number of members at risk of spine surgery"},
+            {"name": "Expected Cost", "tooltip": "Expected cost for members at risk of hip & knee surgery"}
         ],
 
         boxTitles: [
@@ -52,7 +53,8 @@ export const content = {
 
         indicators: [
             {"name": "Total Population", "tooltip": "Number of registered members"},
-            {"name": "Population At-Risk", "tooltip": "Number of members at risk of hip & knee surgery"}
+            {"name": "Population At-Risk", "tooltip": "Number of members at risk of hip & knee surgery"},
+            {"name": "Expected Cost", "tooltip": "Expected cost for members at risk of hip & knee surgery"}
         ],
 
         boxTitles: [

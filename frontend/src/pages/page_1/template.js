@@ -10,7 +10,12 @@ import {popColors, onsetColors} from "../constants";
 import {content} from "./content";
 
 function PageOne(props) {
+
     const info = content[props.condition]
+    const [showCost, setCost] = React.useState(false)
+    let symbol;
+    if (showCost){symbol = "$"} else {symbol=""}
+
     return(
         <div>
             <Header title={info["title"]} subtitle={info["subtitle"]} />
@@ -30,6 +35,9 @@ function PageOne(props) {
                 <Indicator data={props.data["pie_pop"]}
                            name={info["indicators"][1]["name"]}
                            tooltip={info["indicators"][1]["tooltip"]}/>
+                {showCost && <Indicator data={props.data["pie_pop"]}
+                           name={info["indicators"][2]["name"]}
+                           tooltip={info["indicators"][2]["tooltip"]}/>}
             </div>
 
             <div className="flex flex-col">
@@ -41,16 +49,18 @@ function PageOne(props) {
                             explanation={props.explanation}
                             colors={popColors}
                             title={"Total Population"}
-                            symbol={''}
                         />}
                         plot2={<PiePlot
                             data={props.data["pie_onset"]}
                             explanation={props.explanation}
                             colors={onsetColors}
                             title={"Onset Breakdown"}
-                            symbol={""}
+                            symbol={symbol}
+                            showCost={showCost}
                         />}
                         text={info["boxDescription"][2]}
+                        showCost={showCost}
+                        setCost={setCost}
                     />
                     <Box title={info["boxTitles"][1]}
                          plot={<BarPlot

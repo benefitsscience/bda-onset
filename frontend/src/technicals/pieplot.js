@@ -24,6 +24,10 @@ const CustomTooltip = ({ active, payload, explanation, symbol}) => {
 
 
 function PiePlot(props){
+
+    let data;
+    if (props.showCost){data = "Estimated Cost"} else{data = "Population"}
+
     return (
         <ResponsiveContainer width={350} height={320}>
         <PieChart margin={{ top: 5, right: 25, left: 25}}>
@@ -38,7 +42,7 @@ function PiePlot(props){
         <Legend />
           <Pie
               data={props.data}
-              dataKey="Population"
+              dataKey={data}
               nameKey="Class"
               cx="50%"
               cy="50%"
@@ -58,6 +62,7 @@ function PiePlot(props){
                       const x = cx + radius * Math.cos(-midAngle * RADIAN);
                       const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
+                      if (!props.showCost){
                       return (
                         <text
                         fill={props.colors[index]}
@@ -68,7 +73,20 @@ function PiePlot(props){
                         >
                           {Math.round(value)}{props.symbol}
                         </text>
+                      );}
+                      else {
+                      return (
+                        <text
+                        fill={props.colors[index]}
+                          x={x}
+                          y={y}
+                          textAnchor={x > cx ? "start" : "end"}
+                          dominantBaseline="central"
+                        >
+                          {Math.round(value).toLocaleString()}{props.symbol}
+                        </text>
                       );
+                      }
               }}
               legendType="triangle"
           >

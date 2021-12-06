@@ -8,6 +8,9 @@ function Indicator(props) {
     else if (
         props.data.length && props.name === "Population At-Risk")
     {value = props.data[1]["Population"]}
+    else if (
+        props.data.length && props.name === "Expected Cost")
+    {value = "$" + props.data[0]["Estimated Cost"].toLocaleString()}
     else {value = 0}
 
     return(
