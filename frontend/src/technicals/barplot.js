@@ -15,7 +15,7 @@ function BarPlot(props){
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="month" />
             <YAxis domain={[0, 'auto']}
-                   label={{ value: "Percentage of Spine Surgeries (%)",
+                   label={{ value: props.yaxisTitle,
                        position: "insideLeft",
                        angle: -90,
                        dy: 130}}

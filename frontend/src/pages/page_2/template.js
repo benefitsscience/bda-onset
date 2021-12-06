@@ -40,9 +40,10 @@ const columns = [
 
 
 function PageTwo(props) {
+    const info = content[props.condition]
     return(
         <div>
-          <Header title={content["title"]} subtitle={content["subtitle"]} />
+          <Header title={info["title"]} subtitle={info["subtitle"]} />
           <Menu
               client={props.client}
               setClient={props.setClient}
@@ -50,10 +51,10 @@ function PageTwo(props) {
               setCondition={props.setCondition}
           />
           <div className="font-inter font-extralight text-3xl text-gray-700 text-center mt-4 mb-1">
-              {content["tableName"]}
+              {info["tableName"]}
           </div>
           <div className="font-inter font-extralight text-gray-600 text-base mx-16 text-justify">
-              {content["description"]}
+              {info["description"]}
           </div>
           <div className="flex justify-center mx-16 my-6">
             <Table rows={props.data} columns={columns} pageSize={5} />
