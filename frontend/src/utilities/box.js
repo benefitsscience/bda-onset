@@ -1,5 +1,6 @@
 import React from "react";
-
+import Switch from '@material-ui/core/Switch';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 export default function Box(props){
     return(
@@ -35,7 +36,16 @@ export function PieBox(props){
             <div className="font-inter text-xl font-extralight text-center">
                 {props.title}
             </div>
-            <button onClick={()=> props.setCost(!props.showCost)}>Toggle</button>
+            <FormControlLabel
+                value="start"
+                control={<Switch
+                    checked={props.showCost}
+                    onChange={()=> props.setCost(!props.showCost)}
+                    inputProps={{ 'aria-label': 'controlled' }}
+                />}
+                label="Cost ($)"
+                labelPlacement="start"
+            />
         </div>
         <div className="font-inter font-extralight text-gray-600 text-base mx-8 text-justify">
             {props.text["intro"]}
