@@ -3,23 +3,41 @@ import {Bar, BarChart, CartesianGrid, Legend, XAxis, YAxis, Tooltip, ResponsiveC
 import {onsetColors} from "../pages/constants";
 
 function BarPlot(props){
-    const firstEntry = props.data[0]
+    let type;
+    if (props.showCost){
+        type = "barplot_cost"
+    } else {
+        type = "barplot"
+    }
+    const data = props.data[type]
     let labels = []
-    for (const [key, ] of Object.entries(firstEntry)) {
+    for (const [key, ] of Object.entries(data[0])) {
         if (key !== "month"){labels.push(key);}
     }
-    labels = labels.slice(0, -1)
+
     return(
         <ResponsiveContainer width="100%" height={320}>
-        <BarChart data={props.data}>
+        <BarChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="month" />
-            <YAxis domain={[0, 'auto']}
-                   label={{ value: props.yaxisTitle,
-                       position: "insideLeft",
-                       angle: -90,
-                       dy: 130}}
+            {!props.showCost &&
+                <YAxis domain={[0, 'auto']}
+                       label={{ value: "Pct. of " + props.condition + " Surgeries (%)",
+                           position: "insideLeft",
+                           angle: -90,
+                           dy: 120}}
+            />}
+            {props.showCost &&
+                <YAxis domain={[0, 'auto']}
+                       width={100}
+                       label={{ value: "Cost of " + props.condition + " Surgeries ($)",
+                           position: "insideLeft",
+                           angle: -90,
+                           dx: 0,
+                           dy: 120}}
+                       tickFormatter={tick => {return tick.toLocaleString();}}
             />
+            }
             <Tooltip />
             <Legend />
             {labels.map((label, index) => (

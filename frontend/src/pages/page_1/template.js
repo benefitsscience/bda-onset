@@ -66,8 +66,9 @@ function PageOne(props) {
                     />
                     <Box title={info["boxTitles"][1]}
                          plot={<BarPlot
-                             data={props.data["barplot"]}
-                             yaxisTitle={"Percentage of " + props.condition + " Surgeries (%)"}
+                             data={props.data}
+                             condition={props.condition}
+                             showCost={showCost}
                          />}
                          text={info["boxDescription"][1]}
                     />

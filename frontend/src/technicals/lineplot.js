@@ -8,7 +8,7 @@ export function OnsetLinePlot(props){
     for (const [key, ] of Object.entries(firstEntry)) {
         if (key !== "month"){labels.push(key);}
     }
-    labels = labels.slice(0, -1)
+
     return(
         <ResponsiveContainer width="100%" height={320}>
         <LineChart data={props.data}

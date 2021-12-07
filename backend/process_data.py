@@ -29,6 +29,7 @@ def process_data(client: str, condition: str):
 
     # Data
     barplot = pd.read_csv(os.path.join(condition_dir, "overtime.csv"))
+    barplot_cost = pd.read_csv(os.path.join(condition_dir, "overtime_cost.csv"))
     lineplot = pd.read_csv(os.path.join(condition_dir, "relative_diff.csv"))
     pieplot_pop = pd.read_csv(os.path.join(condition_dir, "pie_pop.csv"))
     pieplot_onset = pd.read_csv(os.path.join(condition_dir, "pie_onset.csv"))
@@ -41,6 +42,7 @@ def process_data(client: str, condition: str):
     # Sort columns (string dtype)
     columns = barplot.columns.sort_values()
     barplot = barplot.loc[:, columns]
+    barplot_cost = barplot_cost.loc[:, columns]
     lineplot = lineplot.loc[:, columns]
 
     # Sort Pie data so that each row has `name` in the same order as `columns`
@@ -53,6 +55,7 @@ def process_data(client: str, condition: str):
     outputs = {
         "data": {
             "barplot": barplot.to_dict(orient="records"),
+            "barplot_cost": barplot_cost.to_dict(orient="records"),
             "pie_pop": pieplot_pop.to_dict(orient="records"),
             "pie_onset": pieplot_onset.to_dict(orient="records"),
             "lineplot": lineplot.to_dict(orient="records"),
