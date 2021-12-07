@@ -23,7 +23,7 @@ export function OnsetLinePlot(props){
             />
             <Tooltip />
             <Legend />
-            <ReferenceLine y={0} stroke="black" strokeWidth={2}/>
+            <ReferenceLine y={0} stroke="black" strokeWidth={2} strokeDasharray="3 3"/>
             {labels.map((label, index) => (
                 <Line type="monotone" dataKey={label} stroke={onsetColors[index]} strokeWidth={1.5}/>
                 ))}

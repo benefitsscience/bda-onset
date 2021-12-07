@@ -37,11 +37,11 @@ export function PieBox(props){
                 {props.title}
             </div>
             <FormControlLabel
+                classes="font-inter font-extralight"
                 value="start"
                 control={<Switch
                     checked={props.showCost}
                     onChange={()=> props.setCost(!props.showCost)}
-                    inputProps={{ 'aria-label': 'controlled' }}
                 />}
                 label="Cost ($)"
                 labelPlacement="start"
