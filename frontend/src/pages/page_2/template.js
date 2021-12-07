@@ -7,12 +7,12 @@ import {content} from "./content";
 const columns = [
   { field: 'id',
     headerName: 'Employee ID',
-    width: 170 },
+    width: 160 },
   {
     field: 'Age',
     headerName: 'Age',
     type: 'number',
-    width: 120,
+    width: 110,
   },
   {
     field: 'Gender',
@@ -22,19 +22,19 @@ const columns = [
   {
     field: 'Relation',
     headerName: 'Relation',
-    width: 170,
+    width: 140,
   },
   {
     field: 'Probability',
     headerName: 'Probability',
-    width: 140,
+    width: 160,
   },
   {
     field: 'Reason',
-    headerName: 'Reason',
+    headerName: 'Dominant Feature',
     description: '',
     sortable: false,
-    width: 350,
+    width: 400,
   }
 ];
 
