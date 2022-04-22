@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request
 from process_data import process_data
 
 app = Flask(__name__, static_folder='../build', static_url_path='/')
