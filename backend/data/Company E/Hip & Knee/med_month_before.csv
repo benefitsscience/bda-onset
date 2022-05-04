@@ -1,0 +1,128 @@
+claim,Universal Pct.,Company Pct.
+"M25: Other joint disorder, not elsewhere classified",64.24,63.86
+"Z01: Encntr for oth sp exam w/o complaint, suspected or reprtd dx",53.19,54.9
+S83: Dislocation and sprain of joints and ligaments of knee,45.85,51.31
+M17: Osteoarthritis of knee,38.41,45.38
+I10: Essential (primary) hypertension,20.66,23.72
+M08: Juvenile arthritis,16.18,13.66
+M23: Internal derangement of knee,14.11,12
+E78: Disorders of lipoprotein metabolism and other lipidemias,10.19,11.72
+M54: Dorsalgia,6.7,6.48
+E11: Type 2 diabetes mellitus,6.58,9.52
+"Z00: Encntr for general exam w/o complaint, susp or reprtd dx",6.56,5.79
+M22: Disorder of patella,6.39,9.79
+Z96: Presence of other functional implants,6.12,5.52
+B99: Other and unspecified infectious diseases,6.11,3.17
+Z79: Long term (current) drug therapy,5.18,4.83
+G47: Sleep disorders,4.96,5.93
+"M79: Oth and unsp soft tissue disorders, not elsewhere classified",4.82,5.1
+Z68: Body mass index [BMI],4.79,5.24
+Z23: Encounter for immunization,4.7,2.48
+Z12: Encounter for screening for malignant neoplasms,4.57,4.55
+"G89: Pain, not elsewhere classified",4.18,4.14
+M94: Other disorders of cartilage,4.17,4.83
+E66: Overweight and obesity,4.02,3.86
+R94: Abnormal results of function studies,3.84,4.69
+E03: Other hypothyroidism,3.4,3.45
+S89: Other and unspecified injuries of lower leg,3.31,3.03
+F41: Other anxiety disorders,3.08,1.79
+Z11: Encounter for screening for infec/parastc diseases,2.75,2.48
+"M99: Biomechanical lesions, not elsewhere classified",2.68,3.45
+Z20: Contact w and (suspected) exposure to communicable diseases,2.6,2.48
+Z13: Encounter for screening for other diseases and disorders,2.58,2.9
+I25: Chronic ischemic heart disease,2.5,3.72
+R73: Elevated blood glucose level,2.47,2.48
+K21: Gastro-esophageal reflux disease,2.44,2.07
+Z47: Orthopedic aftercare,2.4,1.1
+M19: Other and unspecified osteoarthritis,2.35,3.86
+Z98: Other postprocedural states,2.35,1.66
+M62: Other disorders of muscle,2.32,2.34
+R53: Malaise and fatigue,2.3,1.93
+R00: Abnormalities of heart beat,2.16,2.07
+R06: Abnormalities of breathing,2.14,2.62
+M24: Other specific joint derangements,2.1,1.66
+J30: Vasomotor and allergic rhinitis,2.07,3.31
+R26: Abnormalities of gait and mobility,2.03,2.62
+M71: Other bursopathies,2,3.31
+"M51: Thoracic, thoracolum, and lumbosacral intvrt disc disorders",1.91,2.62
+"R60: Edema, not elsewhere classified",1.86,1.93
+T84: Complications of internal orthopedic prosth dev/grft,1.86,1.24
+S80: Superficial injury of knee and lower leg,1.81,2.34
+M47: Spondylosis,1.8,2.62
+R07: Pain in throat and chest,1.79,1.93
+E55: Vitamin D deficiency,1.78,1.24
+R10: Abdominal and pelvic pain,1.74,1.1
+M67: Other disorders of synovium and tendon,1.68,2.07
+"S82: Fracture of lower leg, including ankle",1.66,1.52
+J45: Asthma,1.65,1.66
+S73: Dislocation and sprain of joint and ligaments of hip,1.51,0.41
+M87: Osteonecrosis,1.5,1.52
+M21: Other acquired deformities of limbs,1.5,0.69
+N39: Other disorders of urinary system,1.4,0.97
+"M76: Enthesopathies, lower limb, excluding foot",1.39,1.79
+R05: Cough,1.37,1.1
+I48: Atrial fibrillation and flutter,1.37,2.48
+Z87: Personal history of other diseases and conditions,1.29,1.38
+M65: Synovitis and tenosynovitis,1.22,0.97
+Z86: Personal history of certain other diseases,1.18,0.69
+"F32: Major depressive disorder, single episode",1.17,0.69
+F17: Nicotine dependence,1.17,0.41
+"F33: Major depressive disorder, recurrent",1.14,1.24
+Y93: Activity codes,1.13,0.83
+D64: Other anemias,1.05,1.38
+J01: Acute sinusitis,1.04,2.34
+Z02: Encounter for administrative examination,1.04,1.52
+Z51: Encounter for other aftercare,1.03,1.24
+E29: Testicular dysfunction,1.03,2.21
+R68: Other general symptoms and signs,1.02,0.55
+"F43: Reaction to severe stress, and adjustment disorders",1.01,0.41
+I49: Other cardiac arrhythmias,0.97,0.97
+"M70: Soft tissue disorders related to use, overuse and pressure",0.97,0.83
+R79: Other abnormal findings of blood chemistry,0.96,0.97
+Z03: Encntr for medical obs for susp diseases and cond ruled out,0.92,1.1
+R91: Abnormal findings on diagnostic imaging of lung,0.89,1.38
+"S86: Injury of muscle, fascia and tendon at lower leg level",0.87,1.52
+"Z71: Persons encntr health serv for oth cnsl and med advice, NEC",0.86,0.55
+"R03: Abnormal blood-pressure reading, without diagnosis",0.85,1.1
+J06: Acute upper resp infections of multiple and unsp sites,0.84,0.97
+L82: Seborrheic keratosis,0.84,0.41
+M75: Shoulder lesions,0.81,0.69
+J02: Acute pharyngitis,0.79,0.69
+S72: Fracture of femur,0.79,0.41
+M48: Other spondylopathies,0.79,0.41
+R09: Oth symptoms and signs involving the circ and resp sys,0.78,0.83
+F90: Attention-deficit hyperactivity disorders,0.77,0.97
+D22: Melanocytic nevi,0.77,0.14
+M06: Other rheumatoid arthritis,0.76,1.24
+R93: Abnormal findings on diagnostic imaging of body structures,0.76,0.14
+"S76: Injury of muscle, fascia and tendon at hip and thigh level",0.75,0.83
+J44: Other chronic obstructive pulmonary disease,0.75,0.69
+N40: Enlarged prostate,0.74,0.55
+D62: Acute posthemorrhagic anemia,0.73,1.1
+X39: Exposure to other forces of nature,0.71,1.24
+L57: Skin changes due to chronic expsr to nonionizing radiation,0.7,0.55
+X58: Exposure to other specified factors,0.7,0.83
+G43: Migraine,0.68,0.41
+I11: Hypertensive heart disease,0.62,0.83
+M50: Cervical disc disorders,0.62,0.83
+N95: Menopausal and other perimenopausal disorders,0.62,0.83
+H25: Age-related cataract,0.61,0.69
+M85: Other disorders of bone density and structure,0.61,0.83
+R11: Nausea and vomiting,0.61,0.55
+"E87: Other disorders of fluid, electrolyte and acid-base balance",0.6,1.1
+I51: Complications and ill-defined descriptions of heart disease,0.58,0.97
+J98: Other respiratory disorders,0.58,0.69
+Z85: Personal history of malignant neoplasm,0.58,0.28
+M93: Other osteochondropathies,0.56,0.55
+M12: Other and unspecified arthropathy,0.56,0.69
+I45: Other conduction disorders,0.55,1.24
+N18: Chronic kidney disease (CKD),0.55,1.38
+M89: Other disorders of bone,0.55,0.83
+Z29: Encounter for other prophylactic measures,0.55,0.55
+H52: Disorders of refraction and accommodation,0.55,0.28
+R30: Pain associated with micturition,0.53,0.14
+D48: Neoplasm of uncertain behavior of other and unsp sites,0.52,0.83
+L81: Other disorders of pigmentation,0.51,0.14
+D68: Other coagulation defects,0.51,0.41
+R35: Polyuria,0.5,0.83
+"R22: Localized swelling, mass and lump of skin, subcu",0.5,0.69

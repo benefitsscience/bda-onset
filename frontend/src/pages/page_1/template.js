@@ -8,6 +8,8 @@ import BarPlot from "../../technicals/barplot";
 import PiePlot from "../../technicals/pieplot";
 import {popColors, onsetColors} from "../constants";
 import {content} from "./content";
+import ComposedPlot from "../../technicals/composedplot";
+import Map from "../../technicals/map";
 
 function PageOne(props) {
 
@@ -41,7 +43,7 @@ function PageOne(props) {
             </div>
 
             <div className="flex flex-col">
-                <div className="ml:grid grid-flow-row grid-cols-2 grid-rows-2 gap-4 ml:m-4">
+                <div className="ml:grid grid-flow-row grid-cols-2 gap-4 ml:m-4">
                     <PieBox
                         title={info["boxTitles"][2]}
                         plot1={<PiePlot
@@ -64,6 +66,7 @@ function PageOne(props) {
                         showCost={showCost}
                         setCost={setCost}
                     />
+
                     <Box title={info["boxTitles"][1]}
                          plot={<BarPlot
                              data={props.data}
@@ -72,6 +75,7 @@ function PageOne(props) {
                          />}
                          text={info["boxDescription"][1]}
                     />
+
                     <Box title={info["boxTitles"][0]}
                          plot={<OnsetLinePlot
                              data={props.data["lineplot"]}
@@ -79,6 +83,7 @@ function PageOne(props) {
                          />}
                          text={info["boxDescription"][0]}
                     />
+
                     <Box title={info["boxTitles"][3]}
                          plot={<UniversalLinePlot
                              data={props.data["avg_lineplot"]}
@@ -86,6 +91,32 @@ function PageOne(props) {
                          />}
                          text={info["boxDescription"][3]}
                     />
+
+                    <Box title={info["boxTitles"][4]}
+                         plot={<ComposedPlot
+                             data={props.data["icd10_barplot"]}
+                             yaxisTitle={"ICD-10 claim occurrence (%)"}
+                             width={40}
+                             interval={1}
+                         />}
+                         text={info["boxDescription"][4]}
+                    />
+
+                    <Box title={info["boxTitles"][5]}
+                         plot={<ComposedPlot
+                             data={props.data["rx_barplot"]}
+                             yaxisTitle={"Rx claim occurrence (%)"}
+                             width={140}
+                             interval={2}
+                         />}
+                         text={info["boxDescription"][5]}
+                    />
+
+                    <Box title={info["boxTitles"][5]}
+                         plot={<Map/>}
+                         text={info["boxDescription"][5]}
+                    />
+
                 </div>
             </div>
             <div className="p-4"/>

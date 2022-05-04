@@ -23,7 +23,9 @@ export const content = {
             "Relative Difference with Universal Average",
             "Percentage of Spine Surgery by Risk Group",
             "Distribution of Spine Surgery",
-            "Overall Probability of ONSET for Spine Surgery"
+            "Overall Probability of ONSET for Spine Surgery",
+            "Frequency of ICD-10 claims before Spine Surgery",
+            "Frequency of Rx claims after Spine Surgery"
         ],
 
         boxDescription: [
@@ -36,7 +38,11 @@ export const content = {
             "discussion": "Based on latest probabilities: AUGUST 2021"},
             {"intro": "General probability of a person requiring spine surgery in the next 12 months ",
             "discussion": "Note: in overall population of BST data set, the probability of a person requiring" +
-                " spine surgery in the next 12 months is 0.24% "}
+                " spine surgery in the next 12 months is 0.24% "},
+            {"intro": "Percentage of ICD-10 claims in the month prior to spine surgery",
+            "discussion": " "},
+            {"intro": "Percentage of Rx claims in the year following spine surgery",
+            "discussion": " "},
         ]
     },
 
@@ -61,7 +67,9 @@ export const content = {
             "Relative Difference with Universal Average",
             "Percentage of Hip & Knee Surgery by Risk Group",
             "Distribution of Hip & Knee Surgery",
-            "Overall Probability of ONSET for Hip & Knee Surgery"
+            "Overall Probability of ONSET for Hip & Knee Surgery",
+            "Frequency of ICD-10 claims before Hip & Knee Surgery",
+            "Frequency of Rx claims after Hip & Knee Surgery"
         ],
 
         boxDescription: [
@@ -74,8 +82,11 @@ export const content = {
             "discussion": "Based on latest probabilities: AUGUST 2021"},
             {"intro": "General probability of a person requiring hip & knee surgery in the next 12 months ",
             "discussion": "Note: in overall population of BST data set, the probability of a person requiring" +
-                " hip & knee surgery in the next 12 months is 0.47% "}
+                " hip & knee surgery in the next 12 months is 0.47% "},
+            {"intro": "Percentage of ICD-10 claims in the month prior to spine surgery",
+            "discussion": " "},
+            {"intro": "Percentage of Rx claims in the year following spine surgery",
+            "discussion": " "},
         ]
-
     }
 }

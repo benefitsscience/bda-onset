@@ -35,6 +35,18 @@ def process_data(client: str, condition: str):
     pieplot_onset = pd.read_csv(os.path.join(condition_dir, "pie_onset.csv"))
     lineplot_avg = pd.read_csv(os.path.join(condition_dir, "overall_average.csv"))
     table = pd.read_csv(os.path.join(condition_dir, "table.csv"))
+    icd10_barplot = pd.read_csv(os.path.join(condition_dir, "med_month_before.csv"))
+    rx_barplot = pd.read_csv(os.path.join(condition_dir, "rx_year_after.csv"))
+    surgery_map = pd.read_csv(os.path.join(condition_dir, "map.csv"))
+
+    # Select relevant observations & columns
+    icd10_barplot = icd10_barplot.iloc[:30, :]
+    rx_barplot = rx_barplot.iloc[:30, :]
+    surgery_map = surgery_map.loc[:, ["state", "surgeries"]]
+
+    # Format `claim` column for frontend display
+    icd10_barplot['claim'] = icd10_barplot['claim'].apply(lambda x: x.title())
+    rx_barplot['claim'] = rx_barplot['claim'].apply(lambda x: x.title())
 
     # Explanations
     explanation = pd.read_csv(os.path.join(BACKEND_DIR, f"data/Explanation/{condition}.csv"))
@@ -60,7 +72,10 @@ def process_data(client: str, condition: str):
             "pie_onset": pieplot_onset.to_dict(orient="records"),
             "lineplot": lineplot.to_dict(orient="records"),
             "avg_lineplot": lineplot_avg.to_dict(orient="records"),
-            "table": table.to_dict(orient="records")
+            "table": table.to_dict(orient="records"),
+            "icd10_barplot": icd10_barplot.to_dict(orient="records"),
+            "rx_barplot": rx_barplot.to_dict(orient="records"),
+            "surgery_map": surgery_map.to_dict(orient="records")
         },
         "explanation": explanation.to_dict(orient="records")
     }
