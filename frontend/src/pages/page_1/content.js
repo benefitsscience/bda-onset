@@ -24,8 +24,8 @@ export const content = {
             "Percentage of Spine Surgery by Risk Group",
             "Distribution of Spine Surgery",
             "Overall Probability of ONSET for Spine Surgery",
-            "Frequency of ICD-10 claims before Spine Surgery",
-            "Frequency of Rx claims after Spine Surgery",
+            <p>Frequency of ICD-10 claims <b>before</b> Spine Surgery</p>,
+            <p>Frequency of Rx claims <b>after</b> Spine Surgery</p>,
             "Distribution of Spine surgeries across the US"
         ],
 
@@ -71,8 +71,8 @@ export const content = {
             "Percentage of Hip & Knee Surgery by Risk Group",
             "Distribution of Hip & Knee Surgery",
             "Overall Probability of ONSET for Hip & Knee Surgery",
-            "Frequency of ICD-10 claims before Hip & Knee Surgery",
-            "Frequency of Rx claims after Hip & Knee Surgery",
+            <p>Frequency of ICD-10 claims <b>before</b> Hip & Knee Surgery</p>,
+            <p>Frequency of Rx claims <b>after</b> Hip & Knee Surgery</p>,
             "Distribution of Hip & Knee surgeries across the US"
         ],
 
