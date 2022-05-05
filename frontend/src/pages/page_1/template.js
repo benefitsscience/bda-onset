@@ -112,9 +112,9 @@ function PageOne(props) {
                          text={info["boxDescription"][5]}
                     />
 
-                    <Box title={info["boxTitles"][5]}
+                    <Box title={info["boxTitles"][6]}
                          plot={<Map data={props.data["surgery_map"]}/>}
-                         text={info["boxDescription"][5]}
+                         text={info["boxDescription"][6]}
                     />
 
                 </div>

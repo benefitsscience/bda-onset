@@ -142,7 +142,7 @@ function Dropdown(props) {
     }
     return(
         <Fade in={props.isClicked} mountOnEnter unmountOnExit timeout={450}>
-            <ul className="absolute text-gray-900 bg-gray-100 h-screen w-screen bg-opacity-90 mt-1.5 z-50">
+            <ul className="absolute text-gray-900 bg-gray-400 bg-opacity-90 h-screen w-screen bg-opacity-90 mt-1.5 z-50">
                 {itemsLayout}
             </ul>
         </Fade>
@@ -166,7 +166,7 @@ function ClientDropdown(props) {
     }
     return(
         <Fade in={props.isClicked} mountOnEnter unmountOnExit timeout={450}>
-            <ul className="absolute text-gray-900 bg-gray-100 h-auto w-auto mt-1.5 z-50 -ml-1.5">
+            <ul className="absolute text-gray-900 bg-gray-400 bg-opacity-90 h-auto w-auto mt-1.5 z-50 -ml-1.5">
                 {itemsLayout}
             </ul>
         </Fade>
@@ -190,7 +190,7 @@ function ConditionDropdown(props) {
     }
     return(
         <Fade in={props.isClicked} mountOnEnter unmountOnExit timeout={450}>
-            <ul className="absolute text-gray-900 bg-gray-100 h-auto w-auto mt-1.5 z-50 -ml-1.5">
+            <ul className="absolute text-gray-900 bg-gray-400 bg-opacity-90 h-auto w-auto mt-1.5 z-50 -ml-1.5">
                 {itemsLayout}
             </ul>
         </Fade>
@@ -200,7 +200,7 @@ function ConditionDropdown(props) {
 
 function Menu(props) {
     return(
-        <div className="w-screen h-auto bg-gray-100">
+        <div className="sticky top-0 w-screen h-auto bg-gray-400 bg-opacity-80 z-50">
             <HorizontalMenu menuOptions={menuOptions}
                             clientOptions={clientNames}
                             client={props.client}
