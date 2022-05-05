@@ -27,6 +27,7 @@ function BSTDashboard() {
         });
       }, [client, condition]);
 
+    console.log(client)
     console.log(data)
 
     if (data.isLoaded) {

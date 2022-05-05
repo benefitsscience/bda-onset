@@ -8,8 +8,8 @@ import BarPlot from "../../technicals/barplot";
 import PiePlot from "../../technicals/pieplot";
 import {popColors, onsetColors} from "../constants";
 import {content} from "./content";
-import ComposedPlot from "../../technicals/composedplot";
-import Map from "../../technicals/map";
+import ComposedPlot from "../../technicals/composed_plot";
+import Map from "../../technicals/choropleth_map";
 
 function PageOne(props) {
 
@@ -113,7 +113,7 @@ function PageOne(props) {
                     />
 
                     <Box title={info["boxTitles"][5]}
-                         plot={<Map/>}
+                         plot={<Map data={props.data["surgery_map"]}/>}
                          text={info["boxDescription"][5]}
                     />
 
